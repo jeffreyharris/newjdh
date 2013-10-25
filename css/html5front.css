@@ -83,15 +83,6 @@ font-family: arial,sans-sarif;
  font-family: Muli-Light;
  src: url("http://www.jdhdesign.com/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
 }
-@font-face {
- font-family: Muli-Light;
- src: url("http://www.jdhdesign.com/images/Muli-Light.eot") /* EOT file for IE */
-}
-@font-face {
- font-family: Muli-Light;
- src: url("http://www.jdhdesign.com/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
-}
-
 
 h1 {font-family: Muli-Light;
 font-size:21px;
