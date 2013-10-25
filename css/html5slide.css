@@ -6,7 +6,7 @@
 
 #slideshow{
 	background-color:#FFF;
-    border:1px solid #c9c9c9;
+    	border:1px solid #c9c9c9;
 	height:340px;
 	margin:0px auto 40px auto;
 	position:relative;
@@ -48,7 +48,7 @@
 	height:86px;
 	width:60px;
 	position:absolute;
-	background:url('/WORD/graphics/v2/mtp/arrows.png') no-repeat;
+	background:url('/images/arrows.png') no-repeat;
 	top:50%;
 	margin-top:-43px;
 	cursor:pointer;
