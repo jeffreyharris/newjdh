@@ -2,7 +2,11 @@ body    {
     width: 100%;
     min-width: 976px;
     background-color: #ffffff;
+<<<<<<< HEAD
     background:url(/images/yellowstripe22.jpg);
+=======
+    background:url(/WORD/graphics/v3/yellowstripe22.jpg);
+>>>>>>> 1042124019f32aa5024cbe63f3c47b453550c14a
     background-repeat:repeat;
     margin-top: 0pt;
     margin-right: 0pt;
@@ -41,7 +45,11 @@ font-family: arial,sans-sarif;
 		height: 186px;
 		width: 186px;
                 margin-right:50px;
+<<<<<<< HEAD
 		background:url(/images/blogo.jpg) 0 0 no-repeat;
+=======
+		background:url(/WORD/graphics/v3/blogo.jpg) 0 0 no-repeat;
+>>>>>>> 1042124019f32aa5024cbe63f3c47b453550c14a
 		text-indent:-9999px;
 }
 
@@ -52,7 +60,11 @@ font-family: arial,sans-sarif;
 		display: none;
 		height: 186px;
 		width: 186px;
+<<<<<<< HEAD
 		background:url(/images/blogo.jpg) 0 -186px no-repeat;
+=======
+		background:url(/WORD/graphics/v3/blogo.jpg) 0 -186px no-repeat;
+>>>>>>> 1042124019f32aa5024cbe63f3c47b453550c14a
 	}
 
 #leftside {
@@ -76,11 +88,19 @@ font-family: arial,sans-sarif;
 
 @font-face {
  font-family: Muli-Light;
+<<<<<<< HEAD
  src: url("http://www.jdhdesign.com/images/Muli-Light.eot") /* EOT file for IE */
 }
 @font-face {
  font-family: Muli-Light;
  src: url("http://www.jdhdesign.com/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
+=======
+ src: url("http://www.jdhdesign.com/WORD/graphics/Muli-Light.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: Muli-Light;
+ src: url("http://www.jdhdesign.com/WORD/graphics/Muli-Light.ttf") /* TTF file for CSS3 browsers */
+>>>>>>> 1042124019f32aa5024cbe63f3c47b453550c14a
 }
 
 

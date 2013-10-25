@@ -48,7 +48,11 @@
 	height:86px;
 	width:60px;
 	position:absolute;
+<<<<<<< HEAD
 	background:url('/images/arrows.png') no-repeat;
+=======
+	background:url('/WORD/graphics/v2/mtp/arrows.png') no-repeat;
+>>>>>>> 1042124019f32aa5024cbe63f3c47b453550c14a
 	top:50%;
 	margin-top:-43px;
 	cursor:pointer;
