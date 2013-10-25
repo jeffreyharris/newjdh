@@ -2,7 +2,7 @@ body    {
     width: 100%;
     min-width: 976px;
     background-color: #ffffff;
-    background:url(/WORD/graphics/v3/yellowstripe22.jpg);
+    background:url(/images/yellowstripe22.jpg);
     background-repeat:repeat;
     margin-top: 0pt;
     margin-right: 0pt;
@@ -41,7 +41,7 @@ font-family: arial,sans-sarif;
 		height: 186px;
 		width: 186px;
                 margin-right:50px;
-		background:url(/WORD/graphics/v3/blogo.jpg) 0 0 no-repeat;
+		background:url(/images/blogo.jpg) 0 0 no-repeat;
 		text-indent:-9999px;
 }
 
@@ -52,7 +52,7 @@ font-family: arial,sans-sarif;
 		display: none;
 		height: 186px;
 		width: 186px;
-		background:url(/WORD/graphics/v3/blogo.jpg) 0 -186px no-repeat;
+		background:url(/images/blogo.jpg) 0 -186px no-repeat;
 	}
 
 #leftside {
@@ -76,11 +76,11 @@ font-family: arial,sans-sarif;
 
 @font-face {
  font-family: Muli-Light;
- src: url("http://www.jdhdesign.com/WORD/graphics/Muli-Light.eot") /* EOT file for IE */
+ src: url("http://www.jdhdesign.com/images/Muli-Light.eot") /* EOT file for IE */
 }
 @font-face {
  font-family: Muli-Light;
- src: url("http://www.jdhdesign.com/WORD/graphics/Muli-Light.ttf") /* TTF file for CSS3 browsers */
+ src: url("http://www.jdhdesign.com/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
 }
 
 
