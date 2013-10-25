@@ -6,7 +6,7 @@
 
 #slideshow{
 	background-color:#FFF;
-    border:1px solid #c9c9c9;
+    	border:1px solid #c9c9c9;
 	height:340px;
 	margin:0px auto 40px auto;
 	position:relative;
@@ -49,10 +49,14 @@
 	width:60px;
 	position:absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background:url('/images/arrows.png') no-repeat;
 =======
 	background:url('/WORD/graphics/v2/mtp/arrows.png') no-repeat;
 >>>>>>> 1042124019f32aa5024cbe63f3c47b453550c14a
+=======
+	background:url('/images/arrows.png') no-repeat;
+>>>>>>> 519b80f257e8a8cee16ca73d5b8970c21fcc06de
 	top:50%;
 	margin-top:-43px;
 	cursor:pointer;
