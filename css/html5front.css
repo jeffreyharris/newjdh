@@ -14,14 +14,13 @@ body    {
     padding-left: 0pt;
 }
 
-
-
-#top{
-position:relative;
-width:640px;
-margin-left:auto;
-margin-right:auto;
+#wrapper{
+	width:640px;
+	margin-left:auto;
+	margin-right:auto;	
 }
+
+
 
 #tagline{
 text-align:right;
@@ -73,6 +72,47 @@ width:200px;
 font-family: arial,sans-sarif;
 }
 
+@media screen and (max-width: 500px) {
+	
+		#leftside {
+			display:block;
+			float:none;
+			background-color:#000000;
+			width:100%;
+			margin:0px 0px 30px 0px;
+			}
+
+#rightside{
+text-align:left;
+display:block;
+float:none;
+width:100%;
+}
+
+#top{
+	width:100%;
+	margin: 0px;
+	}
+
+#slideshow{
+	background-color:#FFF;
+    border:1px solid #c9c9c9;
+	height:340px;
+	margin:0px auto 40px auto;
+	position:relative;
+	width:100%;
+	}
+
+#slideshow ul{
+	height:320px;
+	left:10px;
+	list-style:none outside none;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
+	width:100%;
+	}
+}
 
 @font-face {
  font-family: Muli-Light;

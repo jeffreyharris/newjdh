@@ -14,17 +14,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="http://www.jdhdesign.com/favicon.ico">
 
-<!--link rel="stylesheet" href="css/normalize.css"-->
-<link rel="stylesheet" type="text/css" href="css/html5slide.css">
-<link rel="stylesheet" type="text/css" href="css/html5front.css">
+<!--link rel="stylesheet" href="/css/normalize.css"-->
+<link rel="stylesheet" type="text/css" href="/css/html5slide.css">
+<link rel="stylesheet" type="text/css" href="/css/html5front.css">
 
-<script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
+<script src="/scripts/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
 
 <body>
-	
-<div id="wrapper">
 	
 <div id="top">
 <div style="height:30px;"></div>
@@ -41,28 +39,24 @@ JDH Design
 <h1 class="muli">a portfolio website for Jeff Harris<br>web developer and designer.</h1> 
 </div>
 
-</div>
-</div>
 
 <div style="clear:both;"></div>
-
-
 <div id="slideshow">
 	 
 	    <ul class="slides">
-	        <li><canvas height="320" width="620"></canvas><img src="images/ups1.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/ups4.jpg" alt="" height="320" width="620"></li>
-			<li><canvas height="320" width="620"></canvas><img src="images/ups3.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/ups5.jpg" alt="" height="320" width="620"></li>
-	        <li><canvas height="320" width="620"></canvas><img src="images/ups2.jpg" alt="" height="320" width="620"></li>
-	        <li><canvas height="320" width="620"></canvas><img src="images/gannett1.jpg" alt="" height="320" width="620"></li>
-	        <li><canvas height="320" width="620"></canvas><img src="images/gannett2.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/mtp1.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/mtp2.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/getout1.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/getout2.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/clark.jpg" alt="" height="320" width="620"></li>
-            <li><canvas height="320" width="620"></canvas><img src="images/beats.jpg" alt="" height="320" width="620"></li>
+	        <li><canvas height="320" width="620"></canvas><img src="/images/ups1.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/ups4.jpg" alt="" height="320" width="620"></li>
+			<li><canvas height="320" width="620"></canvas><img src="/images/ups3.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/ups5.jpg" alt="" height="320" width="620"></li>
+	        <li><canvas height="320" width="620"></canvas><img src="/images/ups2.jpg" alt="" height="320" width="620"></li>
+	        <li><canvas height="320" width="620"></canvas><img src="/images/gannett1.jpg" alt="" height="320" width="620"></li>
+	        <li><canvas height="320" width="620"></canvas><img src="/images/gannett2.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/mtp1.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/mtp2.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/getout1.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/getout2.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/clark.jpg" alt="" height="320" width="620"></li>
+            <li><canvas height="320" width="620"></canvas><img src="/images/beats.jpg" alt="" height="320" width="620"></li>
 	    </ul>
 	 
 <span class="arrow previous"></span>
@@ -70,7 +64,7 @@ JDH Design
 </div>
 
 
-<div class="greyline"><img src="images/greyl.png" alt="" height="1" width="640"></div>	 
+<div class="greyline"><img src="/images/greyl.png" alt="" height="1" width="640"></div>	 
 <div id="leftside">
 <div class="header2"><h2>Web Developement and Design</h2></div>
 <p>
@@ -134,7 +128,7 @@ touch!
 
 </div>
 <div style="clear:both;"></div>
-<div class="greyline"><img src="images/greyl.png" alt="" height="1" width="640"></div>	 
+<div class="greyline"><img src="/images/greyl.png" alt="" height="1" width="640"></div>	 
 <div id="contact">
 <div class="header2"><h2>Contact</h2></div>
 <div class="wpcf7" id="wpcf7-f1-t1-o1"><form action="/#wpcf7-f1-t1-o1" method="post" class="wpcf7-form">
@@ -149,25 +143,25 @@ touch!
 <p><span class="wpcf7-form-control-wrap YourMessage"><textarea name="YourMessage" id="Message" cols="40" rows="10"> Your Message</textarea></span></p>
 <p> <input value="Send" class="wpcf7-submit" type="submit"></p>
 <div class="wpcf7-response-output wpcf7-display-none"></div></form></div></div>
-<div class="greyline"><img src="images/greyl.png" alt="" height="1" width="640"></div>	 
+<div class="greyline"><img src="/images/greyl.png" alt="" height="1" width="640"></div>	 
 
 <div id="footer">
-<img src="images/jdhdesign.png" alt="" height="24" width="56">
+<img src="/images/jdhdesign.png" alt="" height="24" width="56">
 <br>
 © 2013 JDH Design
 <br> 
 <!--a href="http://twitter.com/#!/jdhdesign"><img src="/WORD/graphics/v3/twitter.png" alt="" height="16" width="16" border="0"></a-->
-<a href="http://www.linkedin.com/pub/jeff-harris/31/44a/136"><img src="images/linkedin.png" alt="" height="16" border="0" width="16"></a>
+<a href="http://www.linkedin.com/pub/jeff-harris/31/44a/136"><img src="/images/linkedin.png" alt="" height="16" border="0" width="16"></a>
 </div>
 
 
 </div> <!--END TOP DIV -->
 
-</div> <!-- END WRAPPER -->
+</div>
 
   		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="scripts/gallery.js"></script>
+        <script>window.jQuery || document.write('<script src="/scripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="/scripts/gallery.js"></script>
 
 <!-- navigation animation -->
 <script type="text/javascript">
@@ -207,7 +201,7 @@ var sc_project=6069725;
 var sc_invisible=1; 
 var sc_security="1bfb13c8"; 
 </script>
-<script type="text/javascript" src="scripts/counter.js"></script>
+<script type="text/javascript" src="/scripts/counter.js"></script>
 <noscript><div class="statcounter"><a title="counter
 customisable"
 href="http://statcounter.com/free-hit-counter/"
