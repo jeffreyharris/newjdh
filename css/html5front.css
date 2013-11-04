@@ -72,6 +72,7 @@ width:200px;
 font-family: arial,sans-sarif;
 }
 
+/** RESPONSIVE **/
 @media screen and (max-width: 500px) {
 	
 		#leftside {
