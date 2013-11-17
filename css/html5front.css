@@ -94,6 +94,10 @@ font-family: arial,sans-sarif;
 			display:block;
 			float:none;
 			}
+			
+			#tagline h1{
+			font-size:1em;
+			}
 
 	.fadeThis {
 			position:relative;
@@ -132,7 +136,7 @@ font-family: arial,sans-sarif;
 			}
 
 	#rightside{
-			text-align:left;
+			text-align:center;
 			display:block;
 			float:none;
 			width:100%;
