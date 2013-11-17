@@ -21,7 +21,9 @@ body    {
 	margin-right:auto;	
 }
 
-
+.showOnMobile{
+	display:none;
+}
 
 #tagline{
 	text-align:right;
@@ -79,6 +81,14 @@ body    {
 
 /** RESPONSIVE EDITS**/
 @media screen and (max-width: 500px) {
+
+	.showOnMobile{
+		display: block;
+		}
+		
+	.showOnDesk{
+		display:none;
+		}
 
 	#wrapper{
 			width:100%;	
