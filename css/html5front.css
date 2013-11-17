@@ -141,14 +141,14 @@ body    {
 			padding:1em 0;
 			}
 	
-	/** #leftside{
+	 #leftside{
 			display:block;
 			float:none;
 			width:100%;
 			padding:1em 0 0 5px;
 			text-align:center;
 			}
-			**/
+			
 
 	#rightside{
 			padding:1em 0;
