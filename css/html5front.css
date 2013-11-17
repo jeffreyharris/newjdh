@@ -143,6 +143,10 @@ font-family: arial,sans-sarif;
 			background-color:#ffffff;
 			}
 
+	p {
+			font-size:.5em;
+			padding:0px;
+			}
 
 	#slideshow{
 			background-color:#FFF;
