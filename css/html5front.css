@@ -4,7 +4,7 @@ body    {
     
     background:url(/images/yellowstripe22.jpg);
     
-    background-repeat:repeat;
+    background-repeat:repeat x;
     margin-top: 0pt;
     margin-right: 0pt;
     margin-bottom: 0pt;
@@ -43,7 +43,8 @@ body    {
         margin-right:50px;
 		
         background:url(/images/blogo.jpg) 0 0 no-repeat;
-		text-indent:-9999px;
+		
+        text-indent:-9999px;
 }
 
 .hover {
@@ -172,10 +173,6 @@ body    {
 			width:100%;
 			}
 			
-	#contact{
-			display:none;
-			}
-			
 	#footer{
 			font-size:10px;
 			color:#7d8688;
@@ -235,6 +232,8 @@ padding:3px 0px 10px 0px;
 
 
 #contact{
+/** NEED TO UPDATE CONTACT FORM **/
+display:none;
 font-family: arial,sans-sarif;
 }
 
