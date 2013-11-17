@@ -98,7 +98,7 @@ font-family: arial,sans-sarif;
 	.fadeThis {
 			position:relative;
 			display:block;
-        	float:left;
+        	float:none;
 			height: 186px;
 			width: 100%;
         	margin-right:50px;
@@ -127,7 +127,8 @@ font-family: arial,sans-sarif;
 			display:block;
 			float:none;
 			width:100%;
-			margin:0px 0px 10px 0px;
+			margin:10px 0px 10px 0px;
+			text-align:center;
 			}
 
 	#rightside{
