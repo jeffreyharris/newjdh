@@ -77,9 +77,8 @@ font-family: arial,sans-sarif;
 @media screen and (max-width: 500px) {
 
 	#wrapper{
-			width:640px;
-			margin-left:auto;
-			margin-right:auto;	
+			width:100%;
+			padding:5px;	
 		}
 	
 	#leftside {
