@@ -123,13 +123,14 @@ font-family: arial,sans-sarif;
 		
 	h1{
 			text-align:center;
+			padding:1em 0;
 			}
 	
 	#leftside{
 			display:block;
 			float:none;
 			width:100%;
-			margin:10px 0px 10px 0px;
+			padding:1em 0;
 			text-align:center;
 			}
 
