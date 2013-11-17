@@ -104,9 +104,7 @@ font-family: arial,sans-sarif;
 			display:block;
         	float:none;
 			height: 186px;
-			width: 100%;
-        	margin-right:50px;
-		
+			width: 100%;		
         	background:url(/images/blogo.jpg) 50% 0 no-repeat;
 		
         	text-indent:-9999px;
