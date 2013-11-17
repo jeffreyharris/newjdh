@@ -1,8 +1,9 @@
 body    {    
     width: 100%;
-    /** min-width: 976px;**/
     background-color: #ffffff;
+    
     background:url(/images/yellowstripe22.jpg);
+    
     background-repeat:repeat;
     margin-top: 0pt;
     margin-right: 0pt;
@@ -168,8 +169,15 @@ font-family: arial,sans-sarif;
 			width:100%;
 			}
 			
-			#contact{
+	#contact{
 			display:none;
+			}
+			
+	#footer{
+			font-size:10px;
+			color:#7d8688;
+			margin:0;
+			padding:1em 0;
 			}
 }
 
