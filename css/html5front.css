@@ -1,6 +1,6 @@
 body    {    
     width: 100%;
-    min-width: 976px;
+    /** min-width: 976px;**/
     background-color: #ffffff;
     background:url(/images/yellowstripe22.jpg);
     background-repeat:repeat;
@@ -52,7 +52,8 @@ font-family: arial,sans-sarif;
 		height: 186px;
 		width: 186px;
 		background:url(/images/blogo.jpg) 0 -186px no-repeat;
-	}
+	
+		}
 
 #leftside {
 display:inline;
@@ -74,8 +75,14 @@ font-family: arial,sans-sarif;
 
 /** RESPONSIVE EDITS**/
 @media screen and (max-width: 500px) {
+
+	#wrapper{
+			width:640px;
+			margin-left:auto;
+			margin-right:auto;	
+		}
 	
-		#leftside {
+	#leftside {
 			display:block;
 			float:none;
 			background-color:#000000;
@@ -83,36 +90,36 @@ font-family: arial,sans-sarif;
 			margin:0px 0px 30px 0px;
 			}
 
-#rightside{
-text-align:left;
-display:block;
-float:none;
-width:100%;
-}
+	#rightside{
+			text-align:left;
+			display:block;
+			float:none;
+			width:100%;
+			}
 
-#top{
-	width:100%;
-	margin: 0px;
-	}
+		#top{
+			width:100%;
+			margin: 0px;
+			}
 
-#slideshow{
-	background-color:#FFF;
-    border:1px solid #c9c9c9;
-	height:340px;
-	margin:0px auto 40px auto;
-	position:relative;
-	width:100%;
-	}
+	#slideshow{
+			background-color:#FFF;
+    		border:1px solid #c9c9c9;
+			height:340px;
+			margin:0px auto 40px auto;
+			position:relative;
+			width:100%;
+			}
 
-#slideshow ul{
-	height:320px;
-	left:10px;
-	list-style:none outside none;
-	overflow:hidden;
-	position:absolute;
-	top:10px;
-	width:100%;
-	}
+	#slideshow ul{
+			height:320px;
+			left:10px;
+			list-style:none outside none;
+			overflow:hidden;
+			position:absolute;
+			top:10px;
+			width:100%;
+			}
 }
 
 @font-face {
