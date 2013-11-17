@@ -81,6 +81,11 @@ font-family: arial,sans-sarif;
 			padding:5px;	
 			}
 		
+	#top{
+			width:100%;
+			margin: 0px;
+			}
+			
 	#tagline{
 			text-align:center;
 			width:100%;
@@ -90,6 +95,30 @@ font-family: arial,sans-sarif;
 			float:none;
 			}
 
+	.fadeThis {
+			position:relative;
+			display:block;
+        	float:left;
+			height: 186px;
+			width: 100%;
+        	margin-right:50px;
+		
+        	background:url(/images/blogo.jpg) 0 0 no-repeat;
+		
+        	text-indent:-9999px;
+			}
+
+	.hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+			height: 186px;
+			width: 100%;		
+			background:url(/images/blogo.jpg) 0 -186px no-repeat;
+	
+			}
+		
 	h1{
 			text-align:center;
 			}
@@ -108,10 +137,6 @@ font-family: arial,sans-sarif;
 			width:100%;
 			}
 
-	#top{
-			width:100%;
-			margin: 0px;
-			}
 
 	#slideshow{
 			background-color:#FFF;
