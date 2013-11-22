@@ -18,10 +18,7 @@
 <!--link rel="stylesheet" type="text/css" href="css/html5slide.css"-->
 
 <link rel="stylesheet" type="text/css" href="css/html5front.css">
-
-<style>
-    #galleria{ width: 640px; height: 400px; background: #000 }
-</style>
+<link rel="stylesheet" href="css/refineslide.css" />
 
 <script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
 
@@ -51,22 +48,28 @@ JDH Design
 <div style="clear:both;"></div>
 
 <div id="galleria">
-   			<img src="images/gannett1.jpg" data-title="My title" data-description="My description">
-	        <img src="images/gannett2.jpg" data-title="My title" data-description="My description">
-	        <img src="images/ups1.jpg" data-title="My title" data-description="My description">
-            <img src="images/ups4.jpg" data-title="My title" data-description="My description">
-			<img src="images/ups3.jpg" data-title="My title" data-description="My description">
-            <img src="images/ups5.jpg" data-title="My title" data-description="My description">
-	  		<img src="images/ups2.jpg" data-title="My title" data-description="My description">
-    	    <img src="images/mtp1.jpg" data-title="My title" data-description="My description">
-     		<img src="images/mtp2.jpg" data-title="My title" data-description="My description">
-            <img src="images/getout1.jpg" data-title="My title" data-description="My description">
-            <img src="images/getout2.jpg" data-title="My title" data-description="My description">
-       		<img src="images/clark.jpg" data-title="My title" data-description="My description">
-            <img src="images/beats.jpg" data-title="My title" data-description="My description">
+   			<li><img src="images/gannett1.jpg" alt=""></li>
+	        <li><img src="images/gannett2.jpg" alt=""></li>
+	        <li><img src="images/ups1.jpg" alt=""></li>
+            <li><img src="images/ups4.jpg" alt=""></li>
+			<li><img src="images/ups3.jpg" alt=""></li>
+            <li><img src="images/ups5.jpg" alt=""></li>
+	  		<li><img src="images/ups2.jpg" alt=""></li>
+    	    <li><img src="images/mtp1.jpg" alt=""></li>
+     		<li><img src="images/mtp2.jpg" alt=""></li>
+            <li><img src="images/getout1.jpg" alt=""></li>
+            <li><img src="images/getout2.jpg" alt=""></li>
+       		<li><img src="images/clark.jpg" alt=""></li>
+            <li><img src="images/beats.jpg" alt=""></li>
             
             
 </div>
+
+<ul class="rs-slider">
+    <li><img src="img1.jpg" alt="" /></li>
+    <li><img src="img2.jpg" alt="" /></li>
+    <li><img src="img3.jpg" alt="" /></li>
+</ul>
 
 <div style="clear:both;"></div>
 
@@ -180,12 +183,14 @@ $(document).ready(function() {
 })
 </script>
 
-
-<script src="galleria/galleria-1.3.2.min.js"></script>
+<script src="jquery.refineslide.min.js"></script>
 
 <script>
-    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-    Galleria.run('#galleria');
+    $(function () {
+        $('.rs-slider').refineSlide({
+            maxWidth: 640 // set to native image width (px)
+        });
+    });
 </script>
 
 
