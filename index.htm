@@ -179,9 +179,10 @@ $(document).ready(function() {
 <script>
     $(function () {
         $('.rs-slider').refineSlide({
-            maxWidth: 640, // set to native image width (px)
-            useArrows: true, 
-            useThumbs: false
+            maxWidth : 640, // set to native image width (px)
+            useArrows : true, 
+            arrowTemplate         : '<div class="rs-arrows"><a href="#" class="rs-prev"></a><a href="#" class="rs-next"></a></div>', // String: The markup used for arrow controls (if arrows are used). Must use classes '.rs-next' & '.rs-prev'
+            useThumbs : false
         });
     });
     
