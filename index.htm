@@ -50,7 +50,7 @@ JDH Design
 
 <div style="clear:both;"></div>
 
-<div class="galleria">
+<div id="galleria">
    			<img src="images/gannett1.jpg" data-title="My title" data-description="My description">
 	        <img src="images/gannett2.jpg" data-title="My title" data-description="My description">
 	        <img src="images/ups1.jpg" data-title="My title" data-description="My description">
@@ -185,8 +185,10 @@ $(document).ready(function() {
 
 <script>
     Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-    Galleria.run('.galleria');
+    Galleria.run('#galleria');
 </script>
+
+
 
 <!-- StatCounter -->
 <script type="text/javascript">
