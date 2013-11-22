@@ -79,6 +79,85 @@ body    {
 		font-family: arial,sans-sarif;
 		}
 
+@font-face {
+ font-family: Muli-Light;
+ src: url("/images/Muli-Light.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: Muli-Light;
+ src: url("/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
+}
+
+h1 {font-family: Muli-Light;
+font-size:21px;
+color:#7d8688;
+}
+
+h2 {font-family: Muli-Light;
+font-size:16px;
+color:#7d8688;
+}
+
+h3 {font-family: arial,sans-sarif;
+font-weight:normal;
+text-decoration:underline;
+font-size:12px;
+color:#7d8688;
+display:block;
+line-height:14px;
+}
+
+p {font-family: arial,sans-sarif;
+font-size:12px;
+color:#7d8688;
+padding:10px 30px 10px 0px;
+}
+
+#leftside a {
+cusor:pointer;
+text-decoration:none;
+}
+
+#rightside ul {
+list-style-type:none;
+font-family: arial,sans-sarif;
+font-size:12px;
+color:#7d8688;
+padding:3px 0px 10px 0px;
+}
+
+
+#rightside ul a:link{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
+#rightside ul a:visited{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
+#rightside ul a:hover{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#5c6364;}
+#rightside ul a:active{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
+
+#footer{
+font-family: arial,sans-sarif;
+font-size:10px;
+color:#7d8688;
+margin:0px 0 30px 0;
+text-align:center;
+}
+
+#footerleft{
+float:left;
+}
+
+#footerright{
+float:right;
+}
+
+#footer img{
+padding:5px 0px 2px 0px;
+}
+
+.header2{
+height:30px;
+}
+
+
 /** RESPONSIVE EDITS**/
 @media screen and (max-width: 500px) {
 
@@ -158,31 +237,6 @@ body    {
 			width:100%;
 			background-color:#ffffff;
 			}
-
-	/** #slideshow{
-			display:none;
-			background-color:#FFF;
-    		border-style:none;
-			height:340px;
-			margin:0px;
-			position:relative;
-			width:100%;
-			} **/
-
-	#slideshow ul{
-			height:320px;
-			left:10px;
-			list-style:none outside none;
-			overflow:hidden;
-			position:absolute;
-			top:10px;
-			width:100%;
-			}
-			
-	.greyline{
-			height:20px;
-			width:100%;
-			}
 			
 	#footer{
 			font-size:10px;
@@ -202,82 +256,4 @@ body    {
 			float:none;
 			display:block;
 			}
-}
-
-@font-face {
- font-family: Muli-Light;
- src: url("/images/Muli-Light.eot") /* EOT file for IE */
-}
-
-@font-face {
- font-family: Muli-Light;
- src: url("/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
-}
-
-h1 {font-family: Muli-Light;
-font-size:21px;
-color:#7d8688;
-}
-
-h2 {font-family: Muli-Light;
-font-size:16px;
-color:#7d8688;
-}
-
-h3 {font-family: arial,sans-sarif;
-font-weight:normal;
-text-decoration:underline;
-font-size:12px;
-color:#7d8688;
-display:block;
-line-height:14px;
-}
-
-p {font-family: arial,sans-sarif;
-font-size:12px;
-color:#7d8688;
-padding:10px 30px 10px 0px;
-}
-
-#leftside a {
-cusor:pointer;
-text-decoration:none;
-}
-
-#rightside ul {
-list-style-type:none;
-font-family: arial,sans-sarif;
-font-size:12px;
-color:#7d8688;
-padding:3px 0px 10px 0px;
-}
-
-
-#rightside ul a:link{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
-#rightside ul a:visited{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
-#rightside ul a:hover{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#5c6364;}
-#rightside ul a:active{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
-
-#footer{
-font-family: arial,sans-sarif;
-font-size:10px;
-color:#7d8688;
-margin:0px 0 30px 0;
-text-align:center;
-}
-
-#footerleft{
-float:left;
-}
-
-#footerright{
-float:right;
-}
-
-#footer img{
-padding:5px 0px 2px 0px;
-}
-
-.header2{
-height:30px;
 }

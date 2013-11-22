@@ -4,11 +4,15 @@
 }
 
 
-@media screen and (max-width: 500px) {
-	#slideshow, #slideshow ul, #slideshow ul li, #slideshow ul li img{
+#slideshow ul{
+	height:320px;
+	left:10px;
+	list-style:none outside none;
+	overflow:hidden;
+	position:absolute;
+	top:10px;
 	width:100%;
-}
-}
+	}
 
 #slideshow{
 	background-color:#FFF;
@@ -70,4 +74,13 @@
 
 .clear{
 	clear:both;
+}
+
+/** RESPONSIVE STYLES **/			
+@media screen and (max-width: 500px) {
+	#slideshow, #slideshow ul, #slideshow ul li, #slideshow ul li img{
+	width:100%;
+}
+
+
 }
