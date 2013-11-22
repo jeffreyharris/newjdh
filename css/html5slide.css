@@ -80,7 +80,7 @@
 @media screen and (max-width: 500px) {
 	#slideshow, #slideshow ul, #slideshow ul li, #slideshow ul li img{
 	width:100%;
-	height:auto;
+	height:100%;
 }
 
 #slideshow ul{
