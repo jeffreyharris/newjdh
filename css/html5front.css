@@ -190,6 +190,18 @@ body    {
 			margin:0;
 			padding:1em 0 0 0;
 			}
+	
+	#footerleft{
+			float:none;
+			display:block;
+			padding:0px;
+			margin:0px;
+			}
+
+	#footerright{
+			float:none;
+			display:block;
+			}
 }
 
 @font-face {
