@@ -13,6 +13,18 @@
 
 /* ===[ Slider ]=== */
 
+.rs-slider{
+background-color:#fff;
+padding:10px !important;
+}
+
+@media screen and (max-width: 500px) {
+.rs-slider{
+padding:0px !important;
+}
+
+}
+
 .rs-wrap {
     position: relative;
     max-width: 100%;
