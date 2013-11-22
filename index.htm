@@ -180,9 +180,16 @@ $(document).ready(function() {
     $(function () {
         $('.rs-slider').refineSlide({
             maxWidth : 640, // set to native image width (px)
-            useArrows : true, 
-            arrowTemplate : '<div class="rs-arrows"><a href="#" class="rs-prev"></a><a href="#" class="rs-next"></a></div>', // String: The markup used for arrow controls (if arrows are used). Must use classes '.rs-next' & '.rs-prev'
-            useThumbs : false
+            
+            transition         : 'fade',
+            transitionDuration : 7000,
+            autoPlay           : true,
+            keyNav             : false,
+            delay              : 0,
+            controls           : null
+            //useArrows : true, 
+            //arrowTemplate : '<div class="rs-arrows"><a href="#" class="rs-prev"></a><a href="#" class="rs-next"></a></div>', // String: The markup used for arrow controls (if arrows are used). Must use classes '.rs-next' & '.rs-prev'
+            //useThumbs : false
         });
     });
     
