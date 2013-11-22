@@ -82,5 +82,11 @@
 	width:100%;
 }
 
+#slideshow ul{
+	height:320px;
+	left:0px;
+	top:0px;
+}
+
 
 }
