@@ -239,6 +239,11 @@ color:#7d8688;
 padding:10px 30px 10px 0px;
 }
 
+#leftside a {
+cusor:pointer;
+text-decoration:none;
+}
+
 #rightside ul {
 list-style-type:none;
 font-family: arial,sans-sarif;
