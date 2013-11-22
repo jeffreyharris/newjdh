@@ -74,10 +74,33 @@
 
 /* ===[ Arrows ]=== */
 
-.rs-arrows .rs-next,
-.rs-arrows .rs-prev { z-index: 1; }
+.rs-arrows{
+width:620px;
+display:block;
+}
+.rs-arrows .rs-next { 
+display:inline;
+float:right;
+z-index: 10;
+width:50px;
+background-color:#000;
+height:50px;
+color:#000; 
+}
+
+.rs-arrows .rs-prev{
+display:inline;
+float:right;
+z-index: 10;
+width:50px;
+background-color:#fff;
+height:50px;
+color:#000; 
+
+}
 
 .rs-arrows:hover .rs-next,
+
 .rs-arrows:hover .rs-prev { z-index: 2; }
 
 /* ===[ Captions ]=== */
