@@ -88,8 +88,9 @@ padding:0px !important;
 
 .rs-arrows{
 width:100%;
-
-
+z-index:2;
+position:absolute;
+top:150px;
 }
 
 .rs-arrows .rs-next { 
