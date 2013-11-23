@@ -22,6 +22,13 @@
 
 <script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
 
+<style>
+
+#logo{
+margin:30px 0 0 0;
+}
+
+</style>
 </head>
 
 <body>
@@ -150,14 +157,9 @@ LinkedIn.</a></p>
 <!-- navigation animation -->
 <script type="text/javascript">
 $(document).ready(function() {
-	// find the div.fade elements and hook the hover event
 	$('.fadeThis').hover(function() {
-		// on hovering over find the element we want to fade *up*
 		var fade = $('> .hover', this);
- 
-		// if the element is currently being animated (to fadeOut)...
 		if (fade.is(':animated')) {
-			// ...stop the current animation, and fade it to 1 from current position
 			fade.stop().fadeTo(500, 1);
 		} else {
 			fade.fadeIn(500);
@@ -170,7 +172,6 @@ $(document).ready(function() {
 			fade.fadeOut(500);
 		}
 	});
-	// get rid of the text
 	$('.fadeThis > .hover').empty();
 })
 </script>
