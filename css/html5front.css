@@ -225,14 +225,17 @@ height:30px;
 			padding:1em 0;
 			}
 	
-	 #leftside{
+	#leftside{
 			display:block;
 			float:none;
 			width:100%;
-			padding:0;
 			text-align:center;
 			}
-			
+		
+	#leftside p{
+	padding-left:10px;
+	
+	}	
 
 	#rightside{
 			padding:1em 0;
