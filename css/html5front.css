@@ -188,7 +188,7 @@ height:30px;
 	#tagline{
 			text-align:center;
 			width:100%;
-			margin:10px 0px;
+			margin:0px;
 			position:relative;
 			display:block;
 			float:none;
@@ -261,4 +261,7 @@ height:30px;
 			float:none;
 			display:block;
 			}
+			
+	
+	
 }
