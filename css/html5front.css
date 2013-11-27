@@ -198,26 +198,11 @@ height:30px;
 			font-size:16px;
 			}
 
-	.fadeThis {
-			position:relative;
+	#mobileLogo {
 			display:block;
-        	float:none;
-			height: 186px;
-			width: 100%;		
-        	background:url(/images/blogo.jpg) 50% 0 no-repeat;
-		
-        	text-indent:-9999px;
-			}
-
-	.hover {
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: none;
-			height: 186px;
-			width: 100%;		
-			background:url(/images/blogo.jpg) 39.8% -186px no-repeat;
-	
+            width:100%;
+            text-align:center;
+			
 			}
 		
 	h1{
