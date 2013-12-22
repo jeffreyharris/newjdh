@@ -43,14 +43,12 @@ body    {
 .fadeThis {
 		position:relative;
 		display:inline;
-        float:left;
+                float:left;
 		height: 186px;
 		width: 186px;
-        margin-right:50px;
-		
-        background:url(/images/blogo.jpg) 0 0 no-repeat;
-		
-        text-indent:-9999px;
+                margin-right:50px;
+                background:url(/images/blogo.jpg) 0 0 no-repeat;	
+                text-indent:-9999px;
 }
 
 .hover {
@@ -106,15 +104,14 @@ color:#7d8688;
 
 h3 {font-family: arial,sans-sarif;
 font-weight:normal;
-text-decoration:underline;
-font-size:14px;
+font-size:16px;
 color:#7d8688;
 display:block;
 line-height:14px;
 }
 
 p {font-family: arial,sans-sarif;
-font-size:12px;
+font-size:16px;
 color:#7d8688;
 padding:10px 30px 10px 0px;
 }
@@ -127,7 +124,7 @@ text-decoration:none;
 #rightside ul {
 list-style-type:none;
 font-family: arial,sans-sarif;
-font-size:12px;
+font-size:16px;
 color:#7d8688;
 padding:3px 0px 10px 0px;
 }
@@ -140,7 +137,7 @@ padding:3px 0px 10px 0px;
 
 #footer{
 font-family: arial,sans-sarif;
-font-size:10px;
+font-size:14px;
 color:#7d8688;
 margin:0px 0 30px 0;
 text-align:center;
