@@ -133,10 +133,10 @@ padding:3px 0px 10px 0px;
 }
 
 
-#rightside ul a:link{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
-#rightside ul a:visited{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
-#rightside ul a:hover{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#5c6364;}
-#rightside ul a:active{text-decoration:none;font-family: arial,sans-sarif;font-size:12px;color:#7d8688;}
+#rightside ul a:link{text-decoration:none;font-family: arial,sans-sarif;color:#7d8688;}
+#rightside ul a:visited{text-decoration:none;font-family: arial,sans-sarif;color:#7d8688;}
+#rightside ul a:hover{text-decoration:none;font-family: arial,sans-sarif;color:#5c6364;}
+#rightside ul a:active{text-decoration:none;font-family: arial,sans-sarif;color:#7d8688;}
 
 #footer{
 font-family: arial,sans-sarif;
@@ -212,16 +212,16 @@ padding:5px 0px 2px 0px;
 			}
 			
 	p 		{
-			font-size:14px;
+			font-size:16px;
 			color:#7d8688;
-			padding:10px 0px 10px 0px;
+			padding:0px 0px 0px 0px;
 			}
 	
 	#leftside{
 			display:block;
 			float:none;
 			width:100%;
-			text-align:center;
+			text-align:left;
 			}
 		
 	#leftside p{
@@ -236,6 +236,12 @@ padding:5px 0px 2px 0px;
 			float:none;
 			width:100%;
 			background-color:#ffffff;
+			}
+			
+	#rightside ul {
+			font-size:16px;
+
+			padding:3px 0px 10px 0px;
 			}
 			
 	#footer{
