@@ -1,3 +1,13 @@
+@font-face {
+ font-family: Muli-Light;
+ src: url("/images/Muli-Light.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: Muli-Light;
+ src: url("/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
+}
+
 img {
     max-width: 100%;
 }
@@ -5,9 +15,7 @@ img {
 body    {    
     width: 100%;
     background-color: #ffffff;
-    
     background:url(/images/yellowstripe22.jpg);
-    
     background-repeat:repeat x;
     margin-top: 0pt;
     margin-right: 0pt;
@@ -43,13 +51,13 @@ body    {
 .fadeThis {
 		position:relative;
 		display:inline;
-                float:left;
+        float:left;
 		height: 186px;
 		width: 186px;
-                margin-right:50px;
-                background:url(/images/blogo.jpg) 0 0 no-repeat;	
-                text-indent:-9999px;
-}
+        margin-right:50px;
+        background:url(/images/blogo.jpg) 0 0 no-repeat;	
+        text-indent:-9999px;
+		}
 
 .hover {
 		position: absolute;
@@ -58,10 +66,8 @@ body    {
 		display: none;
 		height: 186px;
 		width: 186px;
-
 		margin:0px;		
 		background:url(/images/blogo.jpg) 0 -186px no-repeat;
-	
 		}
 
 #leftside {
@@ -70,7 +76,7 @@ body    {
 		position:relative;
 		width:440px;
 		margin:0px 0px 30px 0px;
-		font-family: arial,sans-sarif;
+		font-family: Muli-Light;
 		}
 
 #rightside{
@@ -79,18 +85,8 @@ body    {
 		float:left;
 		position:relative;
 		width:200px;
-		font-family: arial,sans-sarif;
+		font-family: Muli-Light;
 		}
-
-@font-face {
- font-family: Muli-Light;
- src: url("/images/Muli-Light.eot") /* EOT file for IE */
-}
-
-@font-face {
- font-family: Muli-Light;
- src: url("/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
-}
 
 h1 {font-family: Muli-Light;
 font-size:21px;
@@ -102,7 +98,7 @@ font-size:18px;
 color:#7d8688;
 }
 
-h3 {font-family: arial,sans-sarif;
+h3 {font-family: Muli-Light;
 font-weight:normal;
 font-size:16px;
 color:#7d8688;
@@ -110,7 +106,7 @@ display:block;
 line-height:14px;
 }
 
-p {font-family: arial,sans-sarif;
+p {
 font-size:16px;
 color:#7d8688;
 padding:10px 30px 10px 0px;
@@ -123,20 +119,19 @@ text-decoration:none;
 
 #rightside ul {
 list-style-type:none;
-font-family: arial,sans-sarif;
 font-size:16px;
 color:#7d8688;
 padding:3px 0px 10px 0px;
 }
 
 
-#rightside ul a:link{text-decoration:none;font-family: arial,sans-sarif;color:#7d8688;}
-#rightside ul a:visited{text-decoration:none;font-family: arial,sans-sarif;color:#7d8688;}
-#rightside ul a:hover{text-decoration:none;font-family: arial,sans-sarif;color:#5c6364;}
-#rightside ul a:active{text-decoration:none;font-family: arial,sans-sarif;color:#7d8688;}
+#rightside ul a:link{text-decoration:none;color:#7d8688;}
+#rightside ul a:visited{text-decoration:none;color:#7d8688;}
+#rightside ul a:hover{text-decoration:none;color:#5c6364;}
+#rightside ul a:active{text-decoration:none;color:#7d8688;}
 
 #footer{
-font-family: arial,sans-sarif;
+font-family: Muli-Light;
 font-size:14px;
 color:#7d8688;
 margin:0px 0 30px 0;
@@ -222,8 +217,8 @@ padding:5px 0px 2px 0px;
 			}
 		
 	#leftside p{
-	padding-left:10px;
-	padding-right:10px;
+	padding-left:15px;
+	padding-right:15px;
 	}	
 
 	#rightside{
@@ -237,7 +232,6 @@ padding:5px 0px 2px 0px;
 			
 	#rightside ul {
 			font-size:16px;
-
 			padding:3px 0px 10px 0px;
 			}
 			
