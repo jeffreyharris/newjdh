@@ -90,25 +90,25 @@ body    {
 
 h1 {font-family: Muli-Light;
 font-size:21px;
-color:#7d8688;
+color:#2E2E2E;
 }
 
 h2 {font-family: Muli-Light;
 font-size:18px;
-color:#7d8688;
+color:#2E2E2E;
 }
 
 h3 {font-family: Muli-Light;
 font-weight:normal;
 font-size:16px;
-color:#7d8688;
+color:#2E2E2E;
 display:block;
 line-height:14px;
 }
 
 p {
 font-size:16px;
-color:#7d8688;
+color:#2E2E2E;
 padding:10px 30px 10px 0px;
 }
 
@@ -117,29 +117,25 @@ cusor:pointer;
 text-decoration:none;
 }
 
-#leftside a:link{text-decoration:none;color:#ffffff;}
-#leftside a:visited{text-decoration:none;color:#ffffff;}
-#leftside a:hover{text-decoration:none;color:#2E64FE;}
-#leftside a:active{text-decoration:none;color:#ffffff;}
 
 
 #rightside ul {
 list-style-type:none;
 font-size:16px;
-color:#7d8688;
+color:#2E2E2E;
 padding:3px 0px 10px 0px;
 }
 
 
-#rightside ul a:link{text-decoration:none;color:#7d8688;}
-#rightside ul a:visited{text-decoration:none;color:#7d8688;}
-#rightside ul a:hover{text-decoration:none;color:#5c6364;}
-#rightside ul a:active{text-decoration:none;color:#7d8688;}
+#rightside ul a:link{text-decoration:none;color:#2E2E2E;}
+#rightside ul a:visited{text-decoration:none;color:#2E2E2E;}
+#rightside ul a:hover{text-decoration:none;color:#2E64FE;}
+#rightside ul a:active{text-decoration:none;color:#2E2E2E;}
 
 #footer{
 font-family: Muli-Light;
 font-size:14px;
-color:#7d8688;
+color:#2E2E2E;
 margin:0px 0 30px 0;
 text-align:center;
 }
@@ -235,6 +231,11 @@ body    {
 	padding-left:15px;
 	padding-right:15px;
 	}	
+
+#leftside a:link{text-decoration:none;color:#ffffff;}
+#leftside a:visited{text-decoration:none;color:#ffffff;}
+#leftside a:hover{text-decoration:none;color:#2E64FE;}
+#leftside a:active{text-decoration:none;color:#ffffff;}
 
 	#rightside{
 			padding:0em 0;

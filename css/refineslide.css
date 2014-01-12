@@ -95,7 +95,7 @@ top:150px;
 	height: 0; 
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
-	border-left: 30px solid #666;
+	border-left: 30px solid #2E2E2E;
 }
 
 .rs-arrows .rs-prev{
@@ -106,7 +106,7 @@ top:150px;
 	height: 0; 
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent; 
-	border-right:30px solid #666; 
+	border-right:30px solid #2E2E2E; 
 }
 
 .rs-arrows:hover .rs-next,
