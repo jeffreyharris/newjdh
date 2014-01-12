@@ -189,17 +189,10 @@ top:150px;
 .rs-slider{
 padding:0px !important;
 margin:1em 0em 0em 0em;
-border-top-color:#000000;
-border-top-style:solid;
-border-top-width:5px;
-border-bottom-color:#000000;
-border-bottom-style:solid;
-border-bottom-width:5px;
-
 }
 
 .rs-arrows{
-top:100px;
+top:80px;
 }
 
 .rs-arrows .rs-next { 
@@ -211,7 +204,7 @@ top:100px;
 	height: 0; 
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent;
-	border-left: 20px solid #666;
+	border-left: 20px solid #2E2E2E;
 }
 
 .rs-arrows .rs-prev{
@@ -222,7 +215,7 @@ top:100px;
 	height: 0; 
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent; 
-	border-right:20px solid #666; 
+	border-right:20px solid #2E2E2E; 
 }
 
 
