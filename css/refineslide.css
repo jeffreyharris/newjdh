@@ -188,6 +188,7 @@ top:150px;
 @media screen and (max-width: 500px) {
 .rs-slider{
 padding:0px !important;
+margin:0px;
 }
 
 .rs-arrows{
