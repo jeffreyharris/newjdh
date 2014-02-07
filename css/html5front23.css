@@ -123,7 +123,6 @@ text-decoration:none;
 }
 
 
-
 aside ul {
 list-style-type:none;
 font-size:16px;
@@ -137,7 +136,7 @@ aside ul a:visited{text-decoration:none;color:#2E2E2E;}
 aside ul a:hover{text-decoration:none;color:#2E64FE;}
 aside ul a:active{text-decoration:none;color:#2E2E2E;}
 
-footer{
+footer {
 font-family: Muli-Light;
 font-size:14px;
 color:#2E2E2E;
@@ -177,7 +176,7 @@ body    {
 			margin:0px !important;
 			}
 		
-	header{
+	header {
 			background-color:#2E2E2E;
 			width:100%;
 			padding:1em 0 1em 0;
@@ -259,7 +258,7 @@ aside ul a:hover{text-decoration:none;color:#2E64FE;}
 aside ul a:active{text-decoration:none;color:#2E64FE;}
 
 
-	footer{
+	footer {
 			font-size:10px;
 			color:#fff;
 			margin:0;
