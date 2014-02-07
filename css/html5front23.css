@@ -147,13 +147,6 @@ text-align:center;
 box-shadow: 0px -1px 0 #999, 0px -1px 0 #fff;
 }
 
-footerleft{
-float:left;
-}
-
-footerright{
-float:right;
-}
 
 footer img{
 padding:5px 0px 2px 0px;
@@ -274,19 +267,5 @@ aside ul a:active{text-decoration:none;color:#2E64FE;}
 			background-color:#2E2E2E;
 			box-shadow:none ;
 			}
-	
-	footerleft{
-			float:none;
-			display:block;
-			padding:0px;
-			margin:0px;
-			}
-
-	footerright{
-			float:none;
-			display:block;
-			}
-			
-	
 	
 }	
