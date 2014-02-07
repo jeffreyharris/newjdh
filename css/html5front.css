@@ -30,10 +30,7 @@ body    {
 #wrapper{
 	width:640px;
 	margin-left:auto;
-	margin-right:auto;
-
-
-	
+	margin-right:auto;	
 }
 
 .showOnMobile{
@@ -130,10 +127,10 @@ padding:3px 0px 10px 0px;
 }
 
 
-#rightside ul a:link{text-decoration:none;color:#2E2E2E;}
-#rightside ul a:visited{text-decoration:none;color:#2E2E2E;}
+#rightside ul a:link{text-decoration:none;color:#2E64FE;}
+#rightside ul a:visited{text-decoration:none;color:#2E64FE;}
 #rightside ul a:hover{text-decoration:none;color:#2E64FE;}
-#rightside ul a:active{text-decoration:none;color:#2E2E2E;}
+#rightside ul a:active{text-decoration:none;color:#2E64FE;}
 
 #footer{
 font-family: Muli-Light;
@@ -238,10 +235,10 @@ body    {
 	padding-right:15px;
 	}	
 
-#leftside a:link{text-decoration:none;color:#ffffff;}
-#leftside a:visited{text-decoration:none;color:#ffffff;}
+#leftside a:link{text-decoration:none;color:#2E64FE;}
+#leftside a:visited{text-decoration:none;color:#2E64FE;}
 #leftside a:hover{text-decoration:none;color:#2E64FE;}
-#leftside a:active{text-decoration:none;color:#ffffff;}
+#leftside a:active{text-decoration:none;color:#2E64FE;}
 
 	#rightside{
 			padding:0em 0;
@@ -258,10 +255,10 @@ body    {
 			color:#2E2E2E;
 			}
 			
-#rightside ul a:link{text-decoration:none;color:#2E2E2E;}
-#rightside ul a:visited{text-decoration:none;color:#2E2E2E;}
-#rightside ul a:hover{text-decoration:none;color:#2E2E2E;}
-#rightside ul a:active{text-decoration:none;color:#2E2E2E;}
+#rightside ul a:link{text-decoration:none;color:#2E64FE;}
+#rightside ul a:visited{text-decoration:none;color:#2E64FE;}
+#rightside ul a:hover{text-decoration:none;color:#2E64FE;}
+#rightside ul a:active{text-decoration:none;color:#2E64FE;}
 
 
 	#footer{
