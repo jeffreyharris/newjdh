@@ -127,10 +127,10 @@ padding:3px 0px 10px 0px;
 }
 
 
-#rightside ul a:link{text-decoration:none;color:#2E64FE;}
-#rightside ul a:visited{text-decoration:none;color:#2E64FE;}
+#rightside ul a:link{text-decoration:none;color:#2E2E2E;}
+#rightside ul a:visited{text-decoration:none;color:#2E2E2E;}
 #rightside ul a:hover{text-decoration:none;color:#2E64FE;}
-#rightside ul a:active{text-decoration:none;color:#2E64FE;}
+#rightside ul a:active{text-decoration:none;color:#2E2E2E;}
 
 #footer{
 font-family: Muli-Light;
