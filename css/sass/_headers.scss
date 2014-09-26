@@ -1,0 +1,41 @@
+$base-fontSize: 16px;
+$base-whitespace: 1.25em;
+
+@font-face {
+ font-family: Muli-Light;
+ src: url("/images/Muli-Light.eot") /* EOT file for IE */
+}
+
+@font-face {
+ font-family: Muli-Light;
+ src: url("/images/Muli-Light.ttf") /* TTF file for CSS3 browsers */
+}
+
+html{
+  font-size: $base-fontSize;
+  line-height: 1.5;
+}
+
+body{
+  font-size: 100%;
+}
+
+h1, h2, h3{
+  margin-bottom: 0.25 * $base-whitespace;
+}
+
+h1{
+  font-size: 300%;
+}
+
+h2{
+  font-size: 200%;
+}
+
+h3{
+  font-size: 150%;
+}
+   
+h1, h2, h3, p, header, footer {
+	font-family: Muli-Light;
+}

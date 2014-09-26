@@ -1,0 +1,143 @@
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+body    {    
+    width: 100%;
+    background-color: #ffffff;
+    background:url(/images/yellowstripe22.jpg);
+    background-repeat:repeat x;
+    margin-top: 0pt;
+    margin-right: 0pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    padding-top: 0pt;
+    padding-right: 0pt;
+    padding-bottom: 0pt;
+    padding-left: 0pt;
+}
+
+// LOGO
+.fadeThis {
+   	    animation: myfirst 5s;
+		position:relative;
+		display:inline;
+        float:left;
+		height: 186px;
+		width: 186px;
+        margin-right:50px;
+        background:url(/images/blackHarris.png) 0 0 no-repeat;	
+        background-size:contain;
+        text-indent:-9999px;
+        -webkit-transition: background 3s; /* For Safari 3.1 to 6.0 */
+    	transition: background 3s;
+}
+
+.fadeThis:hover {		
+		background:url(/images/orangeHarris.png) 0 0 no-repeat;background-size:contain;
+}
+
+//TAGLINE
+#tagline{
+	text-align:center;
+	padding:80px 0px;
+}
+
+//ROWS
+.lightRow{
+	width:100%;
+	background-color: #eee;
+}
+
+.darkRow{
+	width:100%;
+	background-color: #666;
+}
+
+.lightRow, .lightRow{
+	padding: 50px 10px;
+}
+
+.content{
+	width:1000px;
+	margin:0 auto;
+}
+
+//IMAGES
+.leftImage{	
+	display:inline;
+	float:left;
+ 	margin:0px;
+ 	position:relative;
+}
+
+.rightImage{
+	display:inline;
+	float:left;
+ 	margin:0px;
+ 	position:relative;
+}
+
+footer img{
+	padding:5px 0px 2px 0px;
+}
+
+.showOnMobile{
+	display:none;
+}
+
+/** RESPONSIVE EDITS**/
+@media screen and (max-width: 500px) {
+	.showOnMobile{
+		display: block;
+		}
+		
+	.showOnDesk{
+		display:none;
+		}
+
+	#wrapper{
+			width:100%;	
+			padding:0px !important;
+			margin:0px !important;
+			}
+		
+	header {
+			background-color:#2E2E2E;
+			width:100%;
+			padding:1em 0 1em 0;
+			}
+			
+	#tagline{
+			text-align:center;
+			width:100%;
+			margin:0px;
+			position:relative;
+			display:block;
+			float:none;
+			}
+			
+			#tagline h1{
+			font-size:16px;
+			}
+
+	#mobileLogo {
+			display:block;
+            width:100%;
+            text-align:center;
+			}
+
+	footer {
+			font-size:10px;
+			color:#fff;
+			margin:0;
+			padding:2em 0 1em 0;
+			background-color:#2E2E2E;
+			box-shadow:none ;
+			}
+	
+}	
