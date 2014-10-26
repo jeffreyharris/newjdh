@@ -2706,7 +2706,7 @@ body {
 }
 
 header {
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/yellowstripe22.jpg);
+  background: url(/images/yellowstripe22.jpg);
   background-repeat: repeat x;
   padding: 80px 0px;
 }
@@ -2723,7 +2723,7 @@ header {
 .nav {
   display: none;
   background-color: #fff;
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/yellowstripe22.jpg);
+  background: url(/images/yellowstripe22.jpg);
 }
 .nav ul {
   padding: 10px 0px;
@@ -2808,14 +2808,10 @@ header {
   width: 186px;
 }
 
-#preload-01 {
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/orangeHarris.png) no-repeat -9999px -9999px;
-}
-
 .fadeThis {
   height: 186px;
   width: 186px;
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/orangeHarris.png) 0 0 no-repeat;
+  background: url(/images/orangeHarris.png) 0 0 no-repeat;
   background-size: contain;
   text-indent: -9999px;
 }
@@ -2831,7 +2827,7 @@ header {
 .lightRow {
   width: 100%;
   background-color: #fff;
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/ps_neutral.png);
+  background: url(/images/ps_neutral.png);
 }
 .lightRow a, .lightRow a:link, .lightRow a:visited {
   color: #000;
@@ -2841,7 +2837,7 @@ header {
 .darkRow {
   width: 100%;
   background-color: #000;
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/darkBG.png);
+  background: url(/images/darkBG.png);
 }
 .darkRow h2, .darkRow p, .darkRow ul li {
   color: #fff;
@@ -2929,7 +2925,7 @@ header {
 }
 
 footer {
-  background: url(file:///Users/jeffharris/Desktop/newjdh/images/yellowstripe22.jpg);
+  background: url(/images/yellowstripe22.jpg);
   background-repeat: repeat x;
   padding: 10px 0px;
 }
