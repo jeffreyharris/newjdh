@@ -1,0 +1,307 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+$susy: (
+  /* Tells Susy to use 12 columns */
+  columns: 12, 
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box 
+  );
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+img {
+    max-width: 100%;
+}
+
+body    {    
+    margin-top: 0pt;
+    margin-right: 0pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    padding-top: 0pt;
+    padding-right: 0pt;
+    padding-bottom: 0pt;
+    padding-left: 0pt;
+}
+
+header{
+    background:url(file:///Users/jeffharris/Desktop/newjdh/images/yellowstripe22.jpg);
+    background-repeat:repeat x;
+	padding:80px 0px;
+}
+
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+}  
+
+.nav{
+	display:none;
+	background-color:#fff;
+	  background:url(file:///Users/jeffharris/Desktop/newjdh/images/yellowstripe22.jpg);
+		ul{
+			padding:10px 0px;
+			text-align:center;
+			max-width:1000px;
+			margin:0px auto;
+			
+		}
+		ul li{
+			display:inline;
+			padding:0px 20px;
+			
+		}
+		a, a:link, a:visited, a:hover{
+			text-decoration:none;
+			color:#000;
+		}
+}
+
+// LOGO
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:.5s;
+	-moz-animation-duration:.5s;
+	animation-duration:.5s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.hideme{
+    opacity:0;
+}
+
+#logo{
+	margin: 0 auto ;
+	width: 186px;		
+}
+
+//PRELOAD LOGOHOVER
+#preload-01 {background: url(file:///Users/jeffharris/Desktop/newjdh/images/orangeHarris.png) no-repeat -9999px -9999px; }
+		
+.fadeThis {
+		height: 186px;
+		width: 186px;
+        background:url(file:///Users/jeffharris/Desktop/newjdh/images/orangeHarris.png) 0 0 no-repeat;	
+        background-size:contain;
+        text-indent:-9999px;
+}
+
+//.fadeThis:hover {		
+//		background:url(file:///Users/jeffharris/Desktop/newjdh/images/orangeHarris.png) 0 0 no-repeat;
+//		background-size:contain;
+//}
+
+//TAGLINE
+#tagline{
+	display:block;
+	margin: 0 auto ;
+	text-align:center;
+	padding:0px;
+	width:100%;
+}
+
+//ROWS
+.lightRow{
+	width:100%;
+	background-color: #fff;
+	background:url(file:///Users/jeffharris/Desktop/newjdh/images/ps_neutral.png);
+	a, a:link, a:visited{
+		color:#000;
+		text-decoration:underline;
+	}
+}
+
+.darkRow{
+	width:100%;
+	background-color: #000;
+	background:url(file:///Users/jeffharris/Desktop/newjdh/images/darkBG.png);
+		h2, p, ul li{
+			color:#fff;
+		}
+		.rightPhoto, .leftPhoto{
+			background-color:#fff;
+		}
+		a, a:link, a:visited{
+		color:#fff;
+		text-decoration:underline;
+	}
+}
+
+.lightRow, .darkRow{
+	padding: 50px 0px;
+}
+
+.content{
+	max-width:1000px;
+	margin:0 auto;
+}
+
+//IMAGES
+.lightRow .bxShadow {
+	padding: 5px 5px 0px 5px;
+	border: 1px solid #c8c8c8;
+	box-shadow: 2px 2px 2px #C8C8C8;
+	background-color: #fff;
+}
+
+.darkRow .bxShadow{
+	padding: 5px 5px 0px 5px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 2px #101010;
+}
+	
+
+.leftPhoto, .leftFoot {
+  @include span(6); 
+}
+
+.rightPhoto, .rightFoot  {
+  @include span(6 omega);
+}
+
+//TEXT
+.titleText{	
+	@include span(12 omega); 
+}
+
+.leftText{	
+	@include span(9); 
+}
+
+.date{
+	text-decoration:underline;
+	line-height: .5em;
+}
+
+.rightText{
+	@include span(3 omega); 
+		ul{
+	  		list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+				li {
+					border-bottom: 1px solid #ccc;
+  					line-height: 2em;	
+					}
+				li:first-child {
+  					font-family: 'Source Sans Pro', sans-serif;
+  					font-weight: bold;
+					font-size: 1.2em;
+				}
+				li:last-child {
+  					border: none;
+				}
+	}
+}
+
+
+
+footer{
+    background:url(file:///Users/jeffharris/Desktop/newjdh/images/yellowstripe22.jpg);
+    background-repeat:repeat x;
+	padding:10px 0px;
+}
+
+.rightFoot{
+	text-align:right;
+}
+
+.showOnMobile{
+	display:none;
+}
+
+/** RESPONSIVE EDITS**/
+
+@media screen and (max-width: 420px) {	
+	header{
+		padding:20px 0px;
+	}
+	#tagline h1{
+  		font-size: 100%;
+	}	
+	.rightPhoto{
+		display:none;
+	}
+	.leftPhoto{
+		display:block;
+		width:100%;
+	}
+		
+}
+
+@media screen and (min-width: 421px) and (max-width: 550px) {	
+	#tagline h1{
+  		font-size: 150%;
+	}	
+	
+	.rightPhoto{
+		display:none;
+	}
+	.leftPhoto{
+		display:block;
+		width:100%;
+	}	
+}
+
+@media screen and (max-width: 1000px) {	
+	.titleText{
+			@include pad(.25,.25); 
+			display:block;
+			float:none;
+			position:relative;
+			width:100%;
+			}
+	.leftText, .rightText, footer{
+			@include pad(.25,.25); 
+			display:block;
+			float:none;
+			position:relative;
+			width:100%;
+			}			
+			.darkRow .bxShadow, .lightRow .bxShadow{
+  				padding:0px;
+  				border: 0px solid #fff;
+  				box-shadow: none;
+			}		
+}	

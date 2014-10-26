@@ -13,172 +13,296 @@
 <meta name="description" content="Portfolio for front-end web developer Jeff Harris in St. Petersburg Florida.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="http://www.jdhdesign.com/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/css/stylesheets/application.css">
+<link rel="stylesheet" type="text/css" href="css/susy/stylesheets/application-2.css">
 </head>
 
 <body>
 	
-<div id="wrapper">
-	
 <header>
+	<div id="logo" class="fade-in one">
+		<div class="fadeThis">
+			JDH Design
+			<p class="hover "></p>
+		</div>
+	</div>
 
-<div class="showOnDesk" style="height:30px;"></div>
-<div class="showOnMobile" style="height:10px;"></div>
-
-<div id="mobileLogo" class="showOnMobile">
-<img src="/images/whiteJDH.png">
-</div>
-
-<div id="logo" class="showOnDesk">
-<div class="newfadeThis">
-JDH Design
-<p class="hover "></p>
-</div>
-
-<div id="tagline">
-<h1 class="muli">a portfolio website for Jeff Harris<br>Front End Developer at PDM</h1> 
-</div>
-
-</div>
+	<div id="tagline" class="fade-in two">
+		<h1>a portfolio website for Jeff Harris<br>Front End Developer & Designer</h1> 
+	</div>
 </header>
 
-<div style="clear:both;"></div>
+<div class="showNav"> 
+	<div class="nav">  
+	<div class="content">
+       <ul>
+      	 <li><a href="#logo">Introduction</a></li>
+      	 <li><a href="#row1">World Wildlife Fund</a></li>
+      	 <li><a href="#row4">Gannett</a></li>
+      	 <li><a href="#row5">UPS</a></li>
+      	</ul>
+    </div> 
+</div>
+</div>
 
-<section id="slider">
-<ul class="rs-slider">
-		<li>	
-		<span class="picture" data-picture data-alt="WWF Solar Quiz">
-        	<span class="sml" data-src="/images/phone2.jpg"></span>
-        	<span class="med" data-src="/images/solar-caro-1.jpg"  data-media="(min-width: 500px)"></span>
-        	<!-- Fallback content for non-JS browsers -->
-			<noscript><img src="/images/solar-caro-1.jpg" alt="WWF Solar Quiz"></noscript>
-		</span>
-        </li>
-        
-        <li>	
-		<span class="picture" data-picture data-alt="WWF Solar Quiz End Screen">
-        	<span class="sml" data-src="/images/phone4.jpg"></span>
-        	<span class="med" data-src="/images/solar-caro-3.jpg"  data-media="(min-width: 500px)"></span>
-        	<!-- Fallback content for non-JS browsers -->
-			<noscript><img src="/images/solar-caro-3.jpg" alt="WWF Solar Quiz"></noscript>
-		</span>
-        </li>
-        
-        <li>	
-		<span class="picture" data-picture data-alt="WWF Solar Quiz End Screen">
-        	<span class="sml" data-src="/images/phone1.jpg"></span>
-        	<span class="med" data-src="/images/gannett1.jpg"  data-media="(min-width: 500px)"></span>
-        	<!-- Fallback content for non-JS browsers -->
-			<noscript><img src="/images/gannett1.jpg" alt="WWF Solar Quiz"></noscript>
-		</span>
-        </li>	
-	        
-	    <li>	
-		<span class="picture" data-picture data-alt="Underground Poetry Spot Navigaton">
-        	<span class="sml" data-src="/images/phone5.jpg"></span>
-        	<span class="med" data-src="/images/ups3.jpg"  data-media="(min-width: 500px)"></span>
-        	<!-- Fallback content for non-JS browsers -->
-			<noscript><img src="/images/ups3.jpg" alt="Underground Poetry Spot Navigaton"></noscript>
-		</span>
-        </li>
-     		
-     	<li>	
-		<span class="picture" data-picture data-alt="Underground Poetry Spot Logo">
-        	<span class="sml" data-src="/images/phone3.jpg"></span>
-        	<span class="med" data-src="/images/ups5.jpg"  data-media="(min-width: 500px)"></span>
-        	<!-- Fallback content for non-JS browsers -->
-			<noscript><img src="/images/ups5.jpg" alt="Underground Poetry Spot Logo"></noscript>
-		</span>
-        </li>          
-</ul>
+<section id="row1" class="lightRow">
+	<div class="content">
+		
+		<div class="leftPhoto bxShadow fade-in three">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/WWF1.jpg" alt="Underground Poetry Spot Screenshot">
+		</div>
+	
+		<div class="rightPhoto bxShadow fade-in three">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/WWF2.jpg" alt="Underground Poetry Spot Screenshot 2">
+		</div>
+		<div style="clear:both;"></div>
+		<div class="titleText">
+		<H2>World Wildlife Fund</h2>
+		</div>
+		<div class="leftText">
+				<article>	
+					<p class="date">2012 - 2014</p>
+					<p>For two years I was employed by the WWF as a Web Producer. I came aboard just in time for the relaunch of their website <a href="http://www.worldwildlife.org">www.worldwildlife.org.</a>
+					in a new custom CMS with a responsive design.
+				 	</p>
+			 		<p>After its launch I led the development and deployment of corrections to the site via Github, troubleshooting all HTML, CSS/SASS and Javascript issues. 
+			 		I also developed and installed new features, interactive modules, and third party plugins on the site.
+			 		</p>
+			 	</article>
+		</div>
+		
+		<div class="rightText">
+				<ul>
+					<li>What I Used</li>
+					<li><i class="fa fa-fw fa-github-alt"></i>Github</li>
+					<li><i class="fa fa-fw fa-html5"></i>HTML</li>
+					<li><i class="fa fa-fw fa-css3"></i>CSS / SASS</li>
+					<li><i class="fa fa-fw fa-usd"></i>Javascript / JQuery</li>
+					<li><i class="fa fa-fw fa-google"></i>Google Analytics</li>
+					<li><i class="fa fa-fw fa-picture-o"></i>Photoshop / Illustrator</li>
+				</ul>
+				
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
 </section>
 
-<div style="clear:both;"></div>
-
-<section id="leftside">
-<article>
-<div class="header2 showOnDesk"><h2>WEB DEVELOPMENT AND DESIGN</h2></div>
-<p>
-You've reached the online portfolio of Jeff Harris,  
-front-end developer and designer for Progressive Dental Marketing. Above are pictures of digital projects, websites and logos that I've 
-designed, developed, or both.</p>
-
-<p class="showOnDesk">To the right there are links to websites that I've worked on throughout my career.</p>
-
-<p class="showOnMobile">Below are links to websites that I've worked on throughout my career.</p>
-
-<p class="showOnDesk">I've recently relocated to St. Petersburg, FL and taken on a new job, so more updates to this site 
-will be coming soon.</p>
-
-<p>Thank you for taking the time to visit my portfolio. If you would like more information on 
-my experience, please contact me via <a href="http://www.linkedin.com/pub/jeff-harris/31/44a/136" target="_blank">
-LinkedIn.</a></p>
-</article>
+<section id="row2" class="darkRow">
+	<div class="content">
+		
+		<div class="leftPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/earthHour1.jpg" alt="Underground Poetry Spot Screenshot">
+		</div>
+	
+		<div class="rightPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/earthHour2.jpg" alt="Underground Poetry Spot Screenshot 2">
+		</div>
+		<div style="clear:both;"></div>
+		<div class="titleText">
+		<H2>World Wildlife Fund Project - Earth Hour</h2>
+		</div>
+		<div class="leftText">
+				<article>
+					
+					<p class="date">2014</p>
+					<p>During <a href="http://www.worldwildlife.org/pages/earth-hour">Earth Hour</a>, hundreds of millions of 
+					people around the world turn off their lights for one hour to show their 
+					commitment to helping the planet.
+				 	</p>
+			 		<p>For Earth Hour 2014 I collaborated with program staff to develop an Earth Hour Signup module. The module
+			 		allows users to signup for Earth Hour, entering their information using a Convio API. The module is also responsive, and 
+			 		if the user is on a mobile phone, it will ask for their phone number to add to another text notification API.	 
+			 		</p>
+			 		<p>On top of all of this, the module also changed its display and design depending on how many people were signed up and
+			 		kept a running tally of the total number at the top. Every interaction with the module was tracked through Google Analytics Event Tracking
+			 		so that its performance could be analyzed. In the days leading up to Earth Hour 2014, this module captured thousands of 
+			 		signups and valuable information for further further fund raising efforts.
+			 		</p>
+			 	</article>
+		</div>
+		
+		<div class="rightText">
+				<ul>
+					<li>What I Used</li>
+					<li><i class="fa fa-fw fa-html5"></i>HTML</li>
+					<li><i class="fa fa-fw fa-css3"></i>CSS / SASS</li>
+					<li><i class="fa fa-fw fa-usd"></i>Javascript / JQuery</li>
+					<li><i class="fa fa-fw fa-heart"></i>Convio API</li>
+					<li><i class="fa fa-fw fa-mobile"></i>Text Alert API</li>
+					<li><i class="fa fa-fw fa-google"></i>Google Analytics</li>	
+				</ul>	
+		</div>
+		<div style="clear:both;"></div>
+	</div>
 </section>
 
-<aside id="rightside">
+<section id="row3" class="lightRow">
+	<div class="content">
+		
+		<div class="leftPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/NewSolar1.jpg" alt="Underground Poetry Spot Screenshot">
+		</div>
+	
+		<div class="rightPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/solar-caro-3.jpg" alt="Underground Poetry Spot Screenshot 2">
+		</div>
+		<div style="clear:both;"></div>
+		<div class="titleText">
+		<H2>World Wildlife Fund Project - Solar Energy Quiz</h2>
+		</div>
+		<div class="leftText">
+				<article>
+					
+					<p class="date">2013</p>
+					<p>One of my projects during my stay at the WWF was an interactive quiz geared towards promoting one of WWF's
+					campaigns to increase awareness on solar energy. You can still experience it yourself 
+					<a href="http://www.worldwildlife.org/pages/take-the-solar-quiz">here.</a>
+				 	</p>
+			 		<p>I collaborated with program staff to determine the content of the quiz. I then planned the UX and design
+			 		 of the quiz and coded it using HTML, CSS and JavaScript / JQuery. 
+			 		</p>
+			 		<p>The quiz is completely responsive and features animations, different outcomes depending on your score, 
+			 		and was coded so that every click and score was tracked with Google Event Tracking. This
+			 		enabled WWF to determine the popularity of the quiz, which questions the public answered correct or incorrect, 
+			 		and how many shared the quiz or used its call to action links upon completion. Upon launch, this quiz was taken by tens of thousands of 
+			 		WWF supporters.
+			 		</p>
+			 	</article>
+		</div>
+		
+		<div class="rightText">
+				<ul>
+					<li>What I Used</li>
+					<li><i class="fa fa-fw fa-html5"></i>HTML</li>
+					<li><i class="fa fa-fw fa-css3"></i>CSS / SASS</li>
+					<li><i class="fa fa-fw fa-usd"></i>Javascript / JQuery</li>
+					<li><i class="fa fa-fw fa-google"></i>Google Analytics</li>
+					<li><i class="fa fa-fw fa-picture-o"></i>Photoshop / Illustrator</li>
+				</ul>	
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</section>
 
-<div class="header2"><h2>WEBSITES</h2></div>
+<section id="row4" class="darkRow">
+	<div class="content">
+		
+		<div class="leftPhoto bxShadow hideme ">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/gannett1.jpg" alt="Underground Poetry Spot Screenshot">
+		</div>
+	
+		<div class="rightPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/gannett2.jpg" alt="Underground Poetry Spot Screenshot 2">
+		</div>
+		<div style="clear:both;"></div>
+		<div class="titleText">
+		<H2>Gannett</h2>
+		</div>
+		<div class="leftText">
+				<article>
+					
+					<p class="date">2005 - 2011</p>
+					<p>I spent almost 7 years at Gannett, one of the largest news media companies in the country.
+				 	</p>
+			 		<p>During my time as a Team Leader in the Digital Production Center I managed the needs of nine news websites in the 
+			 		southern United States. Towards the end of my time there,  I was tasked with building the new Gannett 
+			 		corporate website, which remains online today. 
+			 		</p>
+			 		<p>During the process I collaborated with Gannett designers to conceptualize, build, and launch the site. I was responsible for design concepts, coding, and it's integration with a Saxotech CMS.
+			 		</p>
+			 	</article>
+		</div>
+		
+		<div class="rightText">
+				<ul>
+					<li>What I Used</li>
+					<li><i class="fa fa-fw fa-archive"></i>Saxotech CMS</li>
+					<li><i class="fa fa-fw fa-html5"></i>HTML</li>
+					<li><i class="fa fa-fw fa-css3"></i>CSS</li>
+					<li><i class="fa fa-fw fa-bar-chart"></i>SiteCatalyst</li>
+					<li><i class="fa fa-fw fa-picture-o"></i>Photoshop / Illustrator</li>
+				</ul>	
+		</div>
+		
+		<div style="clear:both;"></div>
+	</div>
+</section>
 
-<h3>Websites at Work</h3>
-<ul>
-<li><a href="http://www.progressivedentalmarketing.com" target="_blank">Progressive Dental</a></li>
-</ul>
+<section id="row5" class="lightRow">
+	<div class="content">
+		
+		<div class="leftPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/ups1.jpg" alt="Underground Poetry Spot Screenshot">
+		</div>
+	
+		<div class="rightPhoto bxShadow hideme">
+			<img src="file:///Users/jeffharris/Desktop/newjdh/images/ups3.jpg" alt="Underground Poetry Spot Screenshot 2">
+		</div>
+		<div style="clear:both;"></div>
+		<div class="titleText">
+		<H2>Underground Poetry Spot</h2>
+		</div>
+		<div class="leftText">
+				<article>
+					
+					<p class="date">2008 - 2012</p>
+					<p>I designed and created a custom logo, Wordpress website, and marketing materials for a nonprofit 
+					poetry organization based in Syracuse N.Y.
+				 	</p>
+			 		<p>The website featured a completely custom theme complete with a homepage carousel, video and audio players, 
+			 		contact forms and a blog that I kept updated with fresh artwork and content.
+			 		</p>
+			 		<p>The marketing materials included logos, graphics for the blog, and print event posters and flyers.
+			 		</p>
+			 	</article>
+		</div>
+		
+		<div class="rightText">
+				<ul>
+					<li>What I Used</li>
+					<li><i class="fa fa-fw fa-wordpress"></i>Wordpress</li>
+					<li><i class="fa fa-fw fa-html5"></i>HTML</li>
+					<li><i class="fa fa-fw fa-css3"></i>CSS</li>
+					<li><i class="fa fa-fw fa-usd"></i>Javascript / JQuery</li>
+					<li><i class="fa fa-fw fa-pie-chart"></i>StatCounter</li>
+					<li><i class="fa fa-fw fa-picture-o"></i>Photoshop / Illustrator</li>
+				</ul>	
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</section>
 
-
-<h3>Previous Employment</h3>
-<ul>
-<li><a href="http://www.worldwildlife.org/" target="_blank">World Wildlife Fund</a></li>
-<li><a href="http://www.gftpln.org/Home.do?orgId=5811" target="_blank">WWF Legacy Gifts</a></li>
-<li><a href="http://www.worldwildlife.org/energy" target="_blank">WWF Solar Quiz</a></li>
-<li><a href="http://www.gannett.com/" target="_blank">Gannett</a></li>
-<li><a href="http://www.theadvertiser.com/" target="_blank">The Advertiser</a></li>
-<li><a href="http://www.thetowntalk.com/" target="_blank">The Town Talk</a></li>
-<li><a href="http://www.thenewsstar.com/" target="_blank">The News Star</a></li>
-<li><a href="http://www.dailyworld.com/" target="_blank">Daily World</a></li>
-<li><a href="http://www.hattiesburgamerican.com/" target="_blank">Hattiesburg American</a></li>
-<li><a href="http://www.jacksonsun.com/" target="_blank">Jackson Sun</a></li>
-<li><a href="http://www.theleafchronicle.com/" target="_blank">The Leaf Chronicle</a></li>
-<li><a href="http://www.dnj.com/" target="_blank">Daily News Journal</a></li>
-<li><a href="http://www.baxterbulletin.com/" target="_blank">Baxter Bulletin</a></li>
-</ul>
-
-<h3>Websites at Home</h3>
-<ul>
-<li>Underground Poetry Spot (offline)</li>
-<li>Mic The Poet (offline)</li>
-<li><a href="http://www.jdhdesign.com/" target="_blank">JDH Design</a></li>
-</ul>
-
-</aside>
-
-<div style="clear:both;"></div>
 
 <footer>
-© 2014 Jeff Harris
-<br> 
-<a href="http://www.linkedin.com/pub/jeff-harris/31/44a/136"><img src="/images/linkedin.png" alt="" height="16" border="0" width="16"></a>
+	<div class="content">
+		<div class="leftFoot">
+			<p>© 2014 Jeff Harris</p>
+		</div>
+		
+		<div class="rightFoot">
+			<p><a href="http://www.linkedin.com/pub/jeff-harris/31/44a/136"><i class="fa fa-linkedin-square"></i></a>
+				<a href="https://github.com/jeffreyharris"><i class="fa fa-fw fa-github-alt"></i></a>
+			</p>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
 </footer>
 
 
-</div> <!-- END WRAPPER -->
+<!-- END WRAPPER -->
 
-<script src="/scripts/application.js"></script>
+<script src="file:///Users/jeffharris/Desktop/newjdh/scripts/application.js"></script>
 
-<!-- StatCounter -->
-<script type="text/javascript">
-var sc_project=6069725; 
-var sc_invisible=1; 
-var sc_security="1bfb13c8"; 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56105785-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
-<script type="text/javascript" src="scripts/counter.js"></script>
-<noscript><div class="statcounter"><a title="counter
-customisable"
-href="http://statcounter.com/free-hit-counter/"
-target="_blank"><img class="statcounter"
-src="http://c.statcounter.com/6069725/0/1bfb13c8/1/"
-alt="counter customisable"></a></div></noscript>
-<!-- End of StatCounter -->
 
 </body>
 </html>
