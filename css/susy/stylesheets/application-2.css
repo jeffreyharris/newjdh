@@ -2998,11 +2998,11 @@ footer {
 }
 @font-face {
   font-family: Muli-Light;
-  src: url("file:///Users/jeffharris/Desktop/newjdh/images/Muli-Light.eot");
+  src: url("/images/Muli-Light.eot");
 }
 @font-face {
   font-family: Muli-Light;
-  src: url("file:///Users/jeffharris/Desktop/newjdh/images/Muli-Light.ttf");
+  src: url("/images/Muli-Light.ttf");
 }
 html {
   font-size: 16px;
