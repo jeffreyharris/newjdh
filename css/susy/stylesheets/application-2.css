@@ -2978,6 +2978,10 @@ footer {
     display: block;
     width: 100%;
   }
+
+  .lightRow .bxShadow, .darkRow .bxShadow {
+    background-color: transparent;
+  }
 }
 @media screen and (max-width: 1000px) {
   .titleText {
