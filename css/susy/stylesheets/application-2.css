@@ -2929,6 +2929,10 @@ footer {
   background-repeat: repeat x;
   padding: 10px 0px;
 }
+footer a, footer a:link, footer a:visited {
+  color: #000;
+  text-decoration: none;
+}
 
 .rightFoot {
   text-align: right;
