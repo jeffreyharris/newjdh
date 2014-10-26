@@ -2956,6 +2956,14 @@ footer {
     display: block;
     width: 100%;
   }
+
+  .lightRow, .darkRow {
+    padding: 0px 0px 50px 0px;
+  }
+
+  .lightRow .bxShadow, .darkRow .bxShadow {
+    background-color: transparent;
+  }
 }
 @media screen and (min-width: 421px) and (max-width: 550px) {
   #tagline h1 {
@@ -2969,14 +2977,6 @@ footer {
   .leftPhoto {
     display: block;
     width: 100%;
-  }
-
-  .lightRow, .darkRow {
-    padding: 0px 0px 50px 0px;
-  }
-
-  .lightRow .bxShadow, .darkRow .bxShadow {
-    background-color: transparent;
   }
 }
 @media screen and (max-width: 1000px) {
