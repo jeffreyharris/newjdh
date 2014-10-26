@@ -232,6 +232,11 @@ footer{
     background:url(/images/yellowstripe22.jpg);
     background-repeat:repeat x;
 	padding:10px 0px;
+	a, a:link, a:visited{
+		color:#000;
+		text-decoration:none;
+	}
+	
 }
 
 .rightFoot{
@@ -258,14 +263,15 @@ footer{
 		display:block;
 		width:100%;
 	}
-		
+	.lightRow, .darkRow{
+		padding: 0px 0px 50px 0px;
+	}	
 }
 
 @media screen and (min-width: 421px) and (max-width: 550px) {	
 	#tagline h1{
   		font-size: 150%;
-	}	
-	
+	}		
 	.rightPhoto{
 		display:none;
 	}
@@ -273,12 +279,8 @@ footer{
 		display:block;
 		width:100%;
 	}	
-	
 	.lightRow, .darkRow{
 		padding: 0px 0px 50px 0px;
-	}
-	.lightRow .bxShadow, .darkRow .bxShadow{
-		background-color: transparent;
 	}
 }
 
@@ -301,5 +303,6 @@ footer{
   				padding:0px;
   				border: 0px solid #fff;
   				box-shadow: none;
-			}		
+  				background-color: transparent;
+			}	
 }	
