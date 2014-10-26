@@ -2974,6 +2974,10 @@ footer {
   .lightRow, .darkRow {
     padding: 0px 0px 50px 0px;
   }
+
+  .lightRow .bxShadow, .darkRow .bxShadow {
+    background-color: transparent;
+  }
 }
 @media screen and (max-width: 1000px) {
   .titleText {
