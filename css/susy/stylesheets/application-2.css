@@ -2970,6 +2970,10 @@ footer {
     display: block;
     width: 100%;
   }
+
+  .lightRow, .darkRow {
+    padding: 0px 0px 50px 0px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .titleText {
