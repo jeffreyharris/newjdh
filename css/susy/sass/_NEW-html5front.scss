@@ -30,7 +30,7 @@ body    {
 }
 
 header{
-    background:url(/images/yellowstripe22.jpg);
+    background:url(images/yellowstripe22.jpg);
     background-repeat:repeat x;
 	padding:80px 0px;
 }
@@ -47,7 +47,7 @@ header{
 .nav{
 	display:none;
 	background-color:#fff;
-	  background:url(/images/yellowstripe22.jpg);
+	  background:url(images/yellowstripe22.jpg);
 		ul{
 			padding:10px 0px;
 			text-align:center;
@@ -118,7 +118,7 @@ animation-delay: 1s;
 .fadeThis {
 		height: 186px;
 		width: 186px;
-        background:url(/images/orangeHarris.png) 0 0 no-repeat;	
+        background:url(images/orangeHarris.png) 0 0 no-repeat;	
         background-size:contain;
         text-indent:-9999px;
 }
@@ -136,7 +136,7 @@ animation-delay: 1s;
 .lightRow{
 	width:100%;
 	background-color: #fff;
-	background:url(/images/ps_neutral.png);
+	background:url(images/ps_neutral.png);
 	a, a:link, a:visited{
 		color:#000;
 		text-decoration:underline;
@@ -146,7 +146,7 @@ animation-delay: 1s;
 .darkRow{
 	width:100%;
 	background-color: #000;
-	background:url(/images/darkBG.png);
+	background:url(images/darkBG.png);
 		h2, p, ul li{
 			color:#fff;
 		}
@@ -229,7 +229,7 @@ animation-delay: 1s;
 
 
 footer{
-    background:url(/images/yellowstripe22.jpg);
+    background:url(images/yellowstripe22.jpg);
     background-repeat:repeat x;
 	padding:10px 0px;
 	a, a:link, a:visited{
