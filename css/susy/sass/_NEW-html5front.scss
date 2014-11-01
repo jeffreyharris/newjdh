@@ -31,15 +31,19 @@ body    {
 
 .headLink{
 	color:#eee;
-	position:absolute;
-	left:70%;
-	top:0px;
+	text-align:right;
+	padding-bottom:80px;
+	a, a:link, a:visited, a:hover{
+			text-decoration:none;
+			color:#eee;
+		}
 }
+
 
 header{
     background:url(/images/yellowstripe22.jpg);
     background-repeat:repeat x;
-	padding:80px 0px;
+	padding:0px 0px 80px 0px;
 }
 
 .sticky {  
