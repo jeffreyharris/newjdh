@@ -341,6 +341,21 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
   text-align: center;
   width: 100%;
   }
+  
+  .callbacks_nav {
+    position: absolute;
+    top: 52%;
+    left: 0px;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background:url("/images/themes.gif") no-repeat scroll left top transparent;
+    margin-top: -45px;
+}
 
 .rslides_tabs li {
   display: inline;
