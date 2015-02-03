@@ -14,6 +14,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="http://www.jeffreyharris.net/favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/susy/stylesheets/application-2.css">
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+      });
+
+    });
+  </script>
 </head>
 
 <body>
@@ -63,20 +76,31 @@
 		<div style="clear:both;"></div>
 		
 		<!--INSERT GALLERY -->
-		<!--div class="galleryBox">
+		<div class="galleryBox">
+		<div class="buttonBox">
 			<a class="morePhotos openPhotos" href="#" >View Photos</a>
-
+		</div>
 		<div class="galleryPhotos">
-			<div class="leftPhoto bxShadow">
-				<img src="images/PROG1.jpg" alt="Screenshot of website built by Jeff Harris, Front End Web Developer in St. Petersburg Florida">	
-			</div>
-			<div class="rightPhoto bxShadow">
-				<img src="images/PROG2.jpg" alt="Second screenshot of website built by Jeff Harris, Front End Web Developer in St. Petersburg Florida">
-			</div>
-			<div style="clear:both;"></div>	
+			<!-- Slideshow 4 -->
+    		<div class="callbacks_container">
+      			<ul class="rslides" id="slider4">
+        		<li>
+          			<img src="images/PROG1.jpg" alt="">
+         		 <p class="caption">This is a caption</p>
+        		</li>
+        		<li>
+         			 <img src="images/PROG1.jpg" alt="">
+          			<p class="caption">This is another caption</p>
+       			 </li>
+        		<li>
+          			<img src="images/PROG1.jpg" alt="">
+          			<p class="caption">The third caption</p>
+       			 </li>
+      			</ul>
+    		</div>
 		</div>
 		<div class="morePhotos closePhotos"><a href="#" >Close</a></div>
-		</div-->
+		</div>
 <!-- END GALLERY-->
 
 		<div class="titleText">

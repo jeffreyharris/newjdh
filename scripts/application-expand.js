@@ -109,8 +109,7 @@ $(window).scroll(function() {
 	});  
 });  
 
-$('.galleryPhotos').hide();
-$('.closePhotos').hide();
+
 
 
 morePhotos = function(e) {
@@ -133,7 +132,9 @@ morePhotos = function(e) {
 }
 
 $(document).ready(function() {
-		$('.morePhotos').bind('click', morePhotos);
+		$('.galleryPhotos').hide();
+		$('.closePhotos').hide();
+		$('.morePhotos').bind('click', morePhotos());
 });
 
 $(document).ready(function() {  
