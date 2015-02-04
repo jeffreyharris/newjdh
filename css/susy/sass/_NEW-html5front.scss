@@ -354,6 +354,7 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
   callbacks_container{
     position:relative;
     max-width: 620px;
+    margin:0px auto 0px auto;
 }
 
   .callbacks_nav {
@@ -369,6 +370,12 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
     width: 38px;
     background:url("/images/themes.gif") no-repeat scroll left top transparent;
     margin-top: 150px;
+}
+
+  .callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
 }
 
 .rslides_tabs li {
