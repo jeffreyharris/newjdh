@@ -306,7 +306,7 @@ footer{
 
 a.openPhotos, a.openPhotos:active, a.openPhotos:visited{
     color: #FCF250;
-    text-decoration: none;
+    text-decoration: none !important;
     text-shadow: 1px 1px 1px #ff8100;
 }
 
