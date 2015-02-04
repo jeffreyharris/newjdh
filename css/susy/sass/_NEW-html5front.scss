@@ -329,12 +329,11 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
   list-style:none;
   }
 
-#slider2,
-#slider3 {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  margin: 0 auto;
+.rslides li{
+	padding: 5px 5px 0px;
+	border: 1px solid #C8C8C8;
+	box-shadow: 2px 2px 2px #C8C8C8;
+	background-color: #FFF;
   }
 
 .rslides_tabs {
