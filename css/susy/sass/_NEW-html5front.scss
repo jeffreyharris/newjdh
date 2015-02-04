@@ -263,11 +263,15 @@ footer{
 }
 
 .galleryPhotos{
-	positon:relative;
+	position:relative;
+	margin:0px;
+	padding-top:40px;
 }
 
-.buttonBox{
-	height:0px;
+.buttonBox {
+    height: 50px;
+    width: 100px;
+    float: right;
 }
 
 .openPhotos{
@@ -319,7 +323,8 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
 
 //SLIDER
 .rslides {
-  margin: 0 auto 40px;
+  margin: 0 auto 0px auto;
+  list-style:none;
   }
 
 #slider2,
@@ -346,10 +351,15 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
   width: 100%;
   }
   
+  callbacks_container{
+    position:relative;
+    max-width: 620px;
+}
+
   .callbacks_nav {
     position: absolute;
     top: 52%;
-    left: 0px;
+    left: 38px;
     opacity: 0.7;
     z-index: 3;
     text-indent: -9999px;
@@ -360,8 +370,6 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
     background:url("/images/themes.gif") no-repeat scroll left top transparent;
     margin-top: 150px;
 }
-
-
 
 .rslides_tabs li {
   display: inline;
