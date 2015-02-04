@@ -304,7 +304,7 @@ footer{
     background: linear-gradient(to bottom,#FF8100 ,#fcce50);
 }
 
-a.openPhotos, .openPhotos a:active, .openPhotos a:visited{
+a.openPhotos, a.openPhotos:active, a.openPhotos:visited{
     color: #FCF250;
     text-decoration: none;
     text-shadow: 1px 1px 1px #ff8100;
