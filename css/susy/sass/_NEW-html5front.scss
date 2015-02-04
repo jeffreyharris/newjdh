@@ -265,7 +265,7 @@ footer{
 .galleryPhotos{
 	position:relative;
 	margin:0px;
-	padding-top:40px;
+	padding-top:0px;
 	max-width: 655px;
 	margin: 0px auto;
 }
@@ -305,7 +305,7 @@ footer{
 }
 
 a.openPhotos, a.openPhotos:active, a.openPhotos:visited{
-    color: #FCF250;
+    color: #FCF250 !important;
     text-decoration: none !important;
     text-shadow: 1px 1px 1px #ff8100;
 }
