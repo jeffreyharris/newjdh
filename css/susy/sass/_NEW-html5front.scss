@@ -239,8 +239,6 @@ animation-delay: 1s;
 	}
 }
 
-
-
 footer{
     background:url(/images/yellowstripe22.jpg);
     background-repeat:repeat x;
@@ -402,6 +400,10 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
   color: #fff;
   font-weight: bold;
   }
+  
+ .rslides img{
+	width:100%;
+}
 
 /** RESPONSIVE EDITS**/
 
@@ -425,6 +427,9 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
 	.headLink{
 		text-align:right;
 		padding-bottom:10px;
+	}
+	.callbacks_nav {
+    margin-top: 100px;
 	}
 }
 
