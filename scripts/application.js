@@ -138,7 +138,6 @@ JEFF.stickyNav = function() {
 			}  
 };  
   
-  
 $(window).scroll(function() {  
     stickyNav();  
 	}); 
@@ -151,8 +150,6 @@ $(document).ready(function() {
 		JEFF.winScroll();
 		JEFF.stickyNav();
 });
-
-
 
 $(function () {
       // Slideshow 4
