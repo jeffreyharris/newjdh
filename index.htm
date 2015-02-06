@@ -71,7 +71,7 @@
 		<div class="galleryPhotos">
 			<!-- Slideshow -->
     		<div class="callbacks_container">
-      			<ul class="rslides" id="slider4">
+      			<ul class="rslides" id="slider1">
         		<li>
          			 <img src="images/PDM/PROG4.jpg" alt="">
           			<!--p class="caption">This is a caption</p-->
@@ -272,7 +272,7 @@
 		<div class="galleryPhotos">
 			<!-- Slideshow -->
     		<div class="callbacks_container">
-      			<ul class="rslides" id="slider4">
+      			<ul class="rslides" id="slider2">
         		<li>
          			 <img src="images/solar/NewSolar3.jpg" alt="">
           			<!--p class="caption">This is a caption</p-->
@@ -381,7 +381,7 @@
 		<div class="galleryPhotos">
 			<!-- Slideshow -->
     		<div class="callbacks_container">
-      			<ul class="rslides" id="slider5">
+      			<ul class="rslides" id="slider3">
         		<li>
          			 <img src="images/gannett/gannett3.jpg" alt="">
           			<!--p class="caption">This is a caption</p-->
@@ -522,7 +522,7 @@
     // You can also use "$(window).load(function() {"
     $(function () {
       // Slideshow 4
-      $("#slider4").responsiveSlides({
+      $("#slider1").responsiveSlides({
         auto: false,
         pager: false,
         nav: true,
@@ -535,6 +535,12 @@
           $('.events').append("<li>after event fired.</li>");
         }
       });
+      
+      
+
+  $("#slider2").responsiveSlides({namespace: "slider1"});
+
+  $("#slider3").responsiveSlides({namespace: "slider2"});
 
     });
 </script>
