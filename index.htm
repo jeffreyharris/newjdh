@@ -536,9 +536,13 @@
         }
       });
       
-      
-
-  $("#slider2").responsiveSlides({namespace: "slider1"});
+  $("#slider2").responsiveSlides({
+  		auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "slider1"
+        });
 
   $("#slider3").responsiveSlides({namespace: "slider2"});
 
