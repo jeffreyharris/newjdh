@@ -90,27 +90,6 @@ a.pauseControls&&q.hover(function(){clearInterval(p)},function(){m()});if(a.nav)
 a.pauseControls&&d.hover(function(){clearInterval(p)},function(){m()})}}if("undefined"===typeof document.body.style.maxWidth&&l.maxwidth){var H=function(){f.css("width","100%");f.width()>u&&f.css("width",u)};H();c(I).bind("resize",function(){H()})}})}})(jQuery,this,0);
 
 
-$(document).ready(function() {  
-	var stickyNavTop = $('#row2').offset().top;  
-	var stickyNav = function(){  
-		var scrollTop = $(window).scrollTop();  
-			if (scrollTop > stickyNavTop) {   
-   	 			$('.nav').addClass('sticky'); 
-   	 			$('.nav').fadeIn(500);
-			} else {  
-   				 $('.nav').removeClass('sticky');   
-			}  
-};  
- 
-stickyNav();  
-  
-$(window).scroll(function() {  
-    stickyNav();  
-	});  
-});  
-
-
-
 var JEFF = JEFF || {};
 
 JEFF.morePhotos = function(e) {
@@ -132,8 +111,8 @@ JEFF.morePhotos = function(e) {
 		}	
 }
 
-/* Every time the window is scrolled ... */
-JEFF.winScroll = function(e) {
+
+JEFF.winScroll = function() {
     $(window).scroll( function(){
         /* Check the location of each desired element */
         $('.hideme').each( function(i){     
@@ -147,11 +126,30 @@ JEFF.winScroll = function(e) {
     });
 }
 
+JEFF.stickyNav = function() {
+	var stickyNavTop = $('#row2').offset().top;  
+		var stickyNav = function(){  
+			var scrollTop = $(window).scrollTop();  
+				if (scrollTop > stickyNavTop) {   
+   	 				$('.nav').addClass('sticky'); 
+   	 				$('.nav').fadeIn(500);
+				} else {  
+   				 $('.nav').removeClass('sticky');   
+			}  
+};  
+  
+  
+$(window).scroll(function() {  
+    stickyNav();  
+	}); 
+} 
+	
 $(document).ready(function() {
 		$('.galleryPhotos').hide();
 		$('.closePhotos').hide();
 		$('.morePhotos').bind('click', JEFF.morePhotos);
 		JEFF.winScroll();
+		JEFF.stickyNav();
 });
 
 
