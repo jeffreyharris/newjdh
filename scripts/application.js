@@ -150,3 +150,32 @@ $(document).ready(function() {
 		$('.closePhotos').hide();
 		$('.morePhotos').bind('click', JEFF.morePhotos);
 });
+
+
+
+$(function () {
+      // Slideshow 4
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+      });
+      
+  $("#slider2").responsiveSlides({
+  		auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+        });
+
+  $("#slider3").responsiveSlides({
+  		auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+        });
+});
