@@ -436,6 +436,9 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
 	.callbacks_nav {
     margin-top: 100px;
 	}
+	.openPhotos{
+		display:none;
+	}
 }
 
 @media screen and (min-width: 421px) and (max-width: 550px) {	
@@ -451,9 +454,6 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
 	}	
 	.lightRow, .darkRow{
 		padding: 0px 0px 50px 0px;
-	}
-	.openPhotos{
-		display:none;
 	}
 }
 
