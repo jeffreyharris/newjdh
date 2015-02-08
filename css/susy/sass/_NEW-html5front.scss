@@ -332,6 +332,12 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
 	box-shadow: 2px 2px 2px #C8C8C8;
 	background-color: #FFF;
   }
+  
+.darkRow .rslides li{
+	padding: 5px 5px 0px 5px;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 2px #101010;
+}
 
 .rslides_tabs {
   list-style: none;
