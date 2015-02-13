@@ -102,7 +102,7 @@ JEFF.morePhotos = function(e) {
 	
 	if (photos.is(":visible")){
 			photos.slideUp();
-			openLink.text("View Photos");
+			openLink.text("More Photos");
 			closeLink.hide();
 	}else{
 			photos.slideDown();
