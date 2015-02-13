@@ -80,39 +80,19 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 }( this ));
 
 
-
-/*
- * jQuery RefineSlide plugin v0.4.1
- * http://github.com/alexdunphy/refineslide
- * Requires: jQuery v1.8+
- * MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-;(function(f,e,a){var g={maxWidth:800,transition:"cubeV",customTransitions:[],fallback3d:"sliceV",perspective:1000,useThumbs:true,useArrows:false,thumbMargin:3,autoPlay:false,delay:5000,transitionDuration:800,startSlide:0,keyNav:true,captionWidth:50,arrowTemplate:'<div class="rs-arrows"><a href="#" class="rs-prev"></a><a href="#" class="rs-next"></a></div>',onInit:function(){},onChange:function(){},afterChange:function(){}};function b(i,h){this.$slider=f(i).addClass("rs-slider");this.settings=f.extend({},g,h);this.$slides=this.$slider.find("> li");this.totalSlides=this.$slides.length;this.cssTransitions=c.cssTransitions();this.cssTransforms3d=c.cssTransforms3d();this.currentPlace=this.settings.startSlide;this.$currentSlide=this.$slides.eq(this.currentPlace);this.inProgress=false;this.$sliderWrap=this.$slider.wrap('<div class="rs-wrap" />').parent();this.$sliderBG=this.$slider.wrap('<div class="rs-slide-bg" />').parent();this.settings.slider=this;this.init()}b.prototype={cycling:null,$slideImages:null,init:function(){this.settings.onInit();this.captions();if(this.settings.transition==="custom"){this.nextAnimIndex=-1}if(this.settings.useArrows){this.setArrows()}if(this.settings.keyNav){this.setKeys()}for(var h=0;h<this.totalSlides;h++){this.$slides.eq(h).addClass("rs-slide-"+h)}if(this.settings.autoPlay){this.setAutoPlay();this.$slider.on({mouseenter:f.proxy(function(){if(this.cycling!==null){clearTimeout(this.cycling)}},this),mouseleave:f.proxy(this.setAutoPlay,this)})}this.$slideImages=this.$slides.find("img:eq(0)").addClass("rs-slide-image");this.setup()},setup:function(){this.$sliderWrap.css("width",this.settings.maxWidth);if(this.settings.useThumbs){this.setThumbs()}this.$currentSlide.css({opacity:1,"z-index":2})},setArrows:function(){var h=this;this.$sliderWrap.append(this.settings.arrowTemplate);f(".rs-next",this.$sliderWrap).on("click",function(i){i.preventDefault();h.next()});f(".rs-prev",this.$sliderWrap).on("click",function(i){i.preventDefault();h.prev()})},next:function(){if(this.settings.transition==="custom"){this.nextAnimIndex++}if(this.currentPlace===this.totalSlides-1){this.transition(0,true)}else{this.transition(this.currentPlace+1,true)}},prev:function(){if(this.settings.transition==="custom"){this.nextAnimIndex--}if(this.currentPlace==0){this.transition(this.totalSlides-1,false)}else{this.transition(this.currentPlace-1,false)}},setKeys:function(){var h=this;f(a).on("keydown",function(i){if(i.keyCode===39){h.next()}else{if(i.keyCode===37){h.prev()}}})},setAutoPlay:function(){var h=this;this.cycling=setTimeout(function(){h.next()},this.settings.delay)},setThumbs:function(){var k=this,j=(100-((this.totalSlides-1)*this.settings.thumbMargin))/this.totalSlides+"%";this.$thumbWrap=f('<div class="rs-thumb-wrap" />').appendTo(this.$sliderWrap);for(var h=0;h<this.totalSlides;h++){var l=f("<a />").css({width:j,marginLeft:this.settings.thumbMargin+"%"}).attr("href","#").data("rs-num",h);this.$slideImages.eq(h).clone().removeAttr("style").appendTo(this.$thumbWrap).wrap(l)}this.$thumbWrapLinks=this.$thumbWrap.find("a");this.$thumbWrap.children().last().css("margin-right",-10);this.$thumbWrapLinks.eq(this.settings.startSlide).addClass("active");this.$thumbWrap.on("click","a",function(i){i.preventDefault();k.transition(parseInt(f(this).data("rs-num")))})},captions:function(){var i=this,h=this.$slides.find(".rs-caption");h.css({width:i.settings.captionWidth+"%",opacity:0});this.$currentSlide.find(".rs-caption").css("opacity",1);h.each(function(){f(this).css({transition:"opacity "+i.settings.transitionDuration+"ms linear",backfaceVisibility:"hidden"})})},transition:function(i,h){if(!this.inProgress){if(i!==this.currentPlace){if(typeof h==="undefined"){h=i>this.currentPlace?true:false}if(this.settings.useThumbs){this.$thumbWrapLinks.eq(this.currentPlace).removeClass("active");this.$thumbWrapLinks.eq(i).addClass("active")}this.$nextSlide=this.$slides.eq(i);this.currentPlace=i;this.settings.onChange();new d(this,this.settings.transition,h)}}}};function d(i,k,h){this.RS=i;this.RS.inProgress=true;this.forward=h;this.transition=k;if(this.transition==="custom"){this.customAnims=this.RS.settings.customTransitions;this.isCustomTransition=true}if(this.transition==="custom"){var j=this;f.each(this.customAnims,function(l,m){if(f.inArray(m,j.anims)===-1){j.customAnims.splice(l,1)}})}this.fallback3d=this.RS.settings.fallback3d;this.init()}d.prototype={fallback:"fade",anims:["cubeH","cubeV","fade","sliceH","sliceV","slideH","slideV","scale","blockScale","kaleidoscope","fan","blindH","blindV"],customAnims:[],init:function(){this[this.transition]()},before:function(j){var h=this;this.RS.$currentSlide.css("z-index",2);this.RS.$nextSlide.css({opacity:1,"z-index":1});if(this.RS.cssTransitions){this.RS.$currentSlide.find(".rs-caption").css("opacity",0);this.RS.$nextSlide.find(".rs-caption").css("opacity",1)}else{this.RS.$currentSlide.find(".rs-caption").animate({opacity:0},h.RS.settings.transitionDuration);this.RS.$nextSlide.find(".rs-caption").animate({opacity:1},h.RS.settings.transitionDuration)}if(typeof this.setup==="function"){var i=this.setup();setTimeout(function(){j(i)},20)}else{this.execute()}if(this.RS.cssTransitions){f(this.listenTo).one("webkitTransitionEnd transitionend otransitionend oTransitionEnd mstransitionend",f.proxy(this.after,this))}},after:function(){this.RS.$sliderBG.removeAttr("style");this.RS.$slider.removeAttr("style");this.RS.$currentSlide.removeAttr("style");this.RS.$nextSlide.removeAttr("style");this.RS.$currentSlide.css({zIndex:1,opacity:0});this.RS.$nextSlide.css({zIndex:2,opacity:1});if(typeof this.reset==="function"){this.reset()}if(this.RS.settings.autoPlay){clearTimeout(this.RS.cycling);this.RS.setAutoPlay()}this.RS.$currentSlide=this.RS.$nextSlide;this.RS.inProgress=false;this.RS.settings.afterChange()},fade:function(){var h=this;if(this.RS.cssTransitions){this.setup=function(){h.listenTo=h.RS.$currentSlide;h.RS.$currentSlide.css("transition","opacity "+h.RS.settings.transitionDuration+"ms linear")};this.execute=function(){h.RS.$currentSlide.css("opacity",0)}}else{this.execute=function(){h.RS.$currentSlide.animate({opacity:0},h.RS.settings.transitionDuration,function(){h.after()})}}this.before(f.proxy(this.execute,this))},cube:function(o,i,h,n,m,k,j){if(!this.RS.cssTransitions||!this.RS.cssTransforms3d){return this[this["fallback3d"]]()}var l=this;this.setup=function(){l.listenTo=l.RS.$slider;this.RS.$sliderBG.css("perspective",1000);l.RS.$currentSlide.css({transform:"translateZ("+o+"px)",backfaceVisibility:"hidden"});l.RS.$nextSlide.css({opacity:1,backfaceVisibility:"hidden",transform:"translateY("+h+"px) translateX("+i+"px) rotateY("+m+"deg) rotateX("+n+"deg)"});l.RS.$slider.css({transform:"translateZ(-"+o+"px)",transformStyle:"preserve-3d"})};this.execute=function(){l.RS.$slider.css({transition:"all "+l.RS.settings.transitionDuration+"ms ease-in-out",transform:"translateZ(-"+o+"px) rotateX("+k+"deg) rotateY("+j+"deg)"})};this.before(f.proxy(this.execute,this))},cubeH:function(){var h=f(this.RS.$slides).width()/2;if(this.forward){this.cube(h,h,0,0,90,0,-90)}else{this.cube(h,-h,0,0,-90,0,90)}},cubeV:function(){var h=f(this.RS.$slides).height()/2;if(this.forward){this.cube(h,0,-h,90,0,-90,0)}else{this.cube(h,0,h,-90,0,90,0)}},grid:function(m,l,k,i,h,n,o){if(!this.RS.cssTransitions){return this[this["fallback"]]()}var j=this;this.setup=function(){var v=(j.RS.settings.transitionDuration)/(m+l);function u(K,R,O,L,J,P,Q,N,I){var M=(N+I)*v;return f('<div class="rs-gridlet" />').css({width:K,height:R,top:O,left:L,backgroundImage:"url("+J+")",backgroundPosition:"-"+L+"px -"+O+"px",backgroundSize:P+"px "+Q+"px",transition:"all "+j.RS.settings.transitionDuration+"ms ease-in-out "+M+"ms",transform:"none"})}j.$img=j.RS.$currentSlide.find("img.rs-slide-image");j.$grid=f("<div />").addClass("rs-grid");j.RS.$currentSlide.prepend(j.$grid);var w=j.$img.width(),F=j.$img.height(),q=j.$img.attr("src"),H=Math.floor(w/m),s=Math.floor(F/l),A=w-(m*H),x=Math.ceil(A/m),B=F-(l*s),r=Math.ceil(B/l),G=0;i=i==="auto"?w:i;i=i==="min-auto"?-w:i;h=h==="auto"?F:h;h=h==="min-auto"?-F:h;for(var E=0;E<m;E++){var t=0,z=H;if(A>0){var y=A>=x?x:A;z+=y;A-=y}for(var D=0;D<l;D++){var C=s,p=B;if(p>0){y=p>=r?r:B;C+=y;p-=y}j.$grid.append(u(z,C,t,G,q,w,F,E,D));t+=C}G+=z}j.listenTo=j.$grid.children().last();j.$grid.show();j.$img.css("opacity",0);j.$grid.children().first().addClass("rs-top-left");j.$grid.children().last().addClass("rs-bottom-right");j.$grid.children().eq(l-1).addClass("rs-bottom-left");j.$grid.children().eq(-l).addClass("rs-top-right")};this.execute=function(){j.$grid.children().css({opacity:o,transform:"rotate("+k+"deg) translateX("+i+"px) translateY("+h+"px) scale("+n+")"})};this.before(f.proxy(this.execute,this));this.reset=function(){j.$img.css("opacity",1);j.$grid.remove()}},sliceH:function(){this.grid(1,8,0,"min-auto",0,1,0)},sliceV:function(){this.grid(10,1,0,0,"auto",1,0)},slideV:function(){var h=this.forward?"min-auto":"auto";this.grid(1,1,0,0,h,1,1)},slideH:function(){var h=this.forward?"min-auto":"auto";this.grid(1,1,0,h,0,1,1)},scale:function(){this.grid(1,1,0,0,0,1.5,0)},blockScale:function(){this.grid(8,6,0,0,0,0.6,0)},kaleidoscope:function(){this.grid(10,8,0,0,0,1,0)},fan:function(){this.grid(1,10,45,100,0,1,0)},blindV:function(){this.grid(1,8,0,0,0,0.7,0)},blindH:function(){this.grid(10,1,0,0,0,0.7,0)},random:function(){this[this.anims[Math.floor(Math.random()*this.anims.length)]]()},custom:function(){if(this.RS.nextAnimIndex<0){this.RS.nextAnimIndex=this.customAnims.length-1}if(this.RS.nextAnimIndex===this.customAnims.length){this.RS.nextAnimIndex=0}this[this.customAnims[this.RS.nextAnimIndex]]()}};var c={browserVendors:["","-webkit-","-moz-","-ms-","-o-","-khtml-"],domPrefixes:["","Webkit","Moz","ms","O","Khtml"],testDom:function(j){var h=this.domPrefixes.length;while(h--){if(typeof a.body.style[this.domPrefixes[h]+j]!=="undefined"){return true}}return false},cssTransitions:function(){if(typeof e.Modernizr!=="undefined"&&Modernizr.csstransitions!=="undefined"){return Modernizr.csstransitions}return this.testDom("Transition")},cssTransforms3d:function(){if(typeof e.Modernizr!=="undefined"&&Modernizr.csstransforms3d!=="undefined"){return Modernizr.csstransforms3d}if(typeof a.body.style.perspectiveProperty!=="undefined"){return true}return this.testDom("Perspective")}};f.fn.refineSlide=function(h){return this.each(function(){if(!f.data(this,"refineSlide")){f.data(this,"refineSlide",new b(this,h))}})}})(window.jQuery,window,window.document);
-
-
-$(document).ready(function() {  
-	var stickyNavTop = $('#row2').offset().top;  
-	var stickyNav = function(){  
-		var scrollTop = $(window).scrollTop();  
-			if (scrollTop > stickyNavTop) {   
-   	 			$('.nav').addClass('sticky'); 
-   	 			$('.nav').fadeIn(500);
-			} else {  
-   				 $('.nav').removeClass('sticky');   
-			}  
-};  
- 
-stickyNav();  
-  
-$(window).scroll(function() {  
-    stickyNav();  
-	});  
-});  
+/*! http://responsiveslides.com v1.54 by @viljamis */
+(function(c,I,B){c.fn.responsiveSlides=function(l){var a=c.extend({auto:!0,speed:500,timeout:4E3,pager:!1,nav:!1,random:!1,pause:!1,pauseControls:!0,prevText:"Previous",nextText:"Next",maxwidth:"",navContainer:"",manualControls:"",namespace:"rslides",before:c.noop,after:c.noop},l);return this.each(function(){B++;var f=c(this),s,r,t,m,p,q,n=0,e=f.children(),C=e.size(),h=parseFloat(a.speed),D=parseFloat(a.timeout),u=parseFloat(a.maxwidth),g=a.namespace,d=g+B,E=g+"_nav "+d+"_nav",v=g+"_here",j=d+"_on",
+w=d+"_s",k=c("<ul class='"+g+"_tabs "+d+"_tabs' />"),x={"float":"left",position:"relative",opacity:1,zIndex:2},y={"float":"none",position:"absolute",opacity:0,zIndex:1},F=function(){var b=(document.body||document.documentElement).style,a="transition";if("string"===typeof b[a])return!0;s=["Moz","Webkit","Khtml","O","ms"];var a=a.charAt(0).toUpperCase()+a.substr(1),c;for(c=0;c<s.length;c++)if("string"===typeof b[s[c]+a])return!0;return!1}(),z=function(b){a.before(b);F?(e.removeClass(j).css(y).eq(b).addClass(j).css(x),
+n=b,setTimeout(function(){a.after(b)},h)):e.stop().fadeOut(h,function(){c(this).removeClass(j).css(y).css("opacity",1)}).eq(b).fadeIn(h,function(){c(this).addClass(j).css(x);a.after(b);n=b})};a.random&&(e.sort(function(){return Math.round(Math.random())-0.5}),f.empty().append(e));e.each(function(a){this.id=w+a});f.addClass(g+" "+d);l&&l.maxwidth&&f.css("max-width",u);e.hide().css(y).eq(0).addClass(j).css(x).show();F&&e.show().css({"-webkit-transition":"opacity "+h+"ms ease-in-out","-moz-transition":"opacity "+
+h+"ms ease-in-out","-o-transition":"opacity "+h+"ms ease-in-out",transition:"opacity "+h+"ms ease-in-out"});if(1<e.size()){if(D<h+100)return;if(a.pager&&!a.manualControls){var A=[];e.each(function(a){a+=1;A+="<li><a href='#' class='"+w+a+"'>"+a+"</a></li>"});k.append(A);l.navContainer?c(a.navContainer).append(k):f.after(k)}a.manualControls&&(k=c(a.manualControls),k.addClass(g+"_tabs "+d+"_tabs"));(a.pager||a.manualControls)&&k.find("li").each(function(a){c(this).addClass(w+(a+1))});if(a.pager||a.manualControls)q=
+k.find("a"),r=function(a){q.closest("li").removeClass(v).eq(a).addClass(v)};a.auto&&(t=function(){p=setInterval(function(){e.stop(!0,!0);var b=n+1<C?n+1:0;(a.pager||a.manualControls)&&r(b);z(b)},D)},t());m=function(){a.auto&&(clearInterval(p),t())};a.pause&&f.hover(function(){clearInterval(p)},function(){m()});if(a.pager||a.manualControls)q.bind("click",function(b){b.preventDefault();a.pauseControls||m();b=q.index(this);n===b||c("."+j).queue("fx").length||(r(b),z(b))}).eq(0).closest("li").addClass(v),
+a.pauseControls&&q.hover(function(){clearInterval(p)},function(){m()});if(a.nav){g="<a href='#' class='"+E+" prev'>"+a.prevText+"</a><a href='#' class='"+E+" next'>"+a.nextText+"</a>";l.navContainer?c(a.navContainer).append(g):f.after(g);var d=c("."+d+"_nav"),G=d.filter(".prev");d.bind("click",function(b){b.preventDefault();b=c("."+j);if(!b.queue("fx").length){var d=e.index(b);b=d-1;d=d+1<C?n+1:0;z(c(this)[0]===G[0]?b:d);if(a.pager||a.manualControls)r(c(this)[0]===G[0]?b:d);a.pauseControls||m()}});
+a.pauseControls&&d.hover(function(){clearInterval(p)},function(){m()})}}if("undefined"===typeof document.body.style.maxWidth&&l.maxwidth){var H=function(){f.css("width","100%");f.width()>u&&f.css("width",u)};H();c(I).bind("resize",function(){H()})}})}})(jQuery,this,0);
 
 
+var JEFF = JEFF || {};
 
-
-morePhotos = function(e) {
+JEFF.morePhotos = function(e) {
 	e.preventDefault();
 
 	var $el = $(e.target)
@@ -122,7 +102,7 @@ morePhotos = function(e) {
 	
 	if (photos.is(":visible")){
 			photos.slideUp();
-			openLink.text("View Photos");
+			openLink.text("More Photos");
 			closeLink.hide();
 	}else{
 			photos.slideDown();
@@ -131,14 +111,8 @@ morePhotos = function(e) {
 		}	
 }
 
-$(document).ready(function() {
-		$('.galleryPhotos').hide();
-		$('.closePhotos').hide();
-		$('.morePhotos').bind('click', morePhotos());
-});
 
-$(document).ready(function() {  
-    /* Every time the window is scrolled ... */
+JEFF.winScroll = function() {
     $(window).scroll( function(){
         /* Check the location of each desired element */
         $('.hideme').each( function(i){     
@@ -150,4 +124,299 @@ $(document).ready(function() {
             }
         }); 
     });
+}
+
+JEFF.stickyNav = function() {
+	var stickyNavTop = $('#row2').offset().top;  
+		var stickyNav = function(){  
+			var scrollTop = $(window).scrollTop();  
+				if (scrollTop > stickyNavTop) {   
+   	 				$('.nav').addClass('sticky'); 
+   	 				$('.nav').fadeIn(500);
+				} else {  
+   				 $('.nav').removeClass('sticky');   
+			}  
+};  
+  
+$(window).scroll(function() {  
+    stickyNav();  
+	}); 
+} 
+	
+$(document).ready(function() {
+		$('.galleryPhotos').hide();
+		$('.closePhotos').hide();
+		$('.morePhotos').bind('click', JEFF.morePhotos);
+		JEFF.winScroll();
+		JEFF.stickyNav();
+});
+
+$(function () {
+      // Slideshow 4
+      $("#slider1").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+      });
+      
+  $("#slider2").responsiveSlides({
+  		auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+        });
+
+  $("#slider3").responsiveSlides({
+  		auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks"
+        });
+});
+
+/*
+ * jQuery One Page Nav Plugin
+ * http://github.com/davist11/jQuery-One-Page-Nav
+ *
+ * Copyright (c) 2010 Trevor Davis (http://trevordavis.net)
+ * Dual licensed under the MIT and GPL licenses.
+ * Uses the same license as jQuery, see:
+ * http://jquery.org/license
+ *
+ * @version 3.0.0
+ *
+ * Example usage:
+ * $('#nav').onePageNav({
+ *   currentClass: 'current',
+ *   changeHash: false,
+ *   scrollSpeed: 750
+ * });
+ */
+
+;(function($, window, document, undefined){
+
+	// our plugin constructor
+	var OnePageNav = function(elem, options){
+		this.elem = elem;
+		this.$elem = $(elem);
+		this.options = options;
+		this.metadata = this.$elem.data('plugin-options');
+		this.$win = $(window);
+		this.sections = {};
+		this.didScroll = false;
+		this.$doc = $(document);
+		this.docHeight = this.$doc.height();
+	};
+
+	// the plugin prototype
+	OnePageNav.prototype = {
+		defaults: {
+			navItems: 'a',
+			currentClass: 'current',
+			changeHash: false,
+			easing: 'swing',
+			filter: '',
+			scrollSpeed: 750,
+			scrollThreshold: 0.5,
+			begin: false,
+			end: false,
+			scrollChange: false
+		},
+
+		init: function() {
+			// Introduce defaults that can be extended either
+			// globally or using an object literal.
+			this.config = $.extend({}, this.defaults, this.options, this.metadata);
+
+			this.$nav = this.$elem.find(this.config.navItems);
+
+			//Filter any links out of the nav
+			if(this.config.filter !== '') {
+				this.$nav = this.$nav.filter(this.config.filter);
+			}
+
+			//Handle clicks on the nav
+			this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
+
+			//Get the section positions
+			this.getPositions();
+
+			//Handle scroll changes
+			this.bindInterval();
+
+			//Update the positions on resize too
+			this.$win.on('resize.onePageNav', $.proxy(this.getPositions, this));
+
+			return this;
+		},
+
+		adjustNav: function(self, $parent) {
+			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
+			$parent.addClass(self.config.currentClass);
+		},
+
+		bindInterval: function() {
+			var self = this;
+			var docHeight;
+
+			self.$win.on('scroll.onePageNav', function() {
+				self.didScroll = true;
+			});
+
+			self.t = setInterval(function() {
+				docHeight = self.$doc.height();
+
+				//If it was scrolled
+				if(self.didScroll) {
+					self.didScroll = false;
+					self.scrollChange();
+				}
+
+				//If the document height changes
+				if(docHeight !== self.docHeight) {
+					self.docHeight = docHeight;
+					self.getPositions();
+				}
+			}, 250);
+		},
+
+		getHash: function($link) {
+			return $link.attr('href').split('#')[1];
+		},
+
+		getPositions: function() {
+			var self = this;
+			var linkHref;
+			var topPos;
+			var $target;
+
+			self.$nav.each(function() {
+				linkHref = self.getHash($(this));
+				$target = $('#' + linkHref);
+
+				if($target.length) {
+					topPos = $target.offset().top;
+					self.sections[linkHref] = Math.round(topPos);
+				}
+			});
+		},
+
+		getSection: function(windowPos) {
+			var returnValue = null;
+			var windowHeight = Math.round(this.$win.height() * this.config.scrollThreshold);
+
+			for(var section in this.sections) {
+				if((this.sections[section] - windowHeight) < windowPos) {
+					returnValue = section;
+				}
+			}
+
+			return returnValue;
+		},
+
+		handleClick: function(e) {
+			var self = this;
+			var $link = $(e.currentTarget);
+			var $parent = $link.parent();
+			var newLoc = '#' + self.getHash($link);
+
+			if(!$parent.hasClass(self.config.currentClass)) {
+				//Start callback
+				if(self.config.begin) {
+					self.config.begin();
+				}
+
+				//Change the highlighted nav item
+				self.adjustNav(self, $parent);
+
+				//Removing the auto-adjust on scroll
+				self.unbindInterval();
+
+				//Scroll to the correct position
+				self.scrollTo(newLoc, function() {
+					//Do we need to change the hash?
+					if(self.config.changeHash) {
+						window.location.hash = newLoc;
+					}
+
+					//Add the auto-adjust on scroll back in
+					self.bindInterval();
+
+					//End callback
+					if(self.config.end) {
+						self.config.end();
+					}
+				});
+			}
+
+			e.preventDefault();
+		},
+
+		scrollChange: function() {
+			var windowTop = this.$win.scrollTop();
+			var position = this.getSection(windowTop);
+			var $parent;
+
+			//If the position is set
+			if(position !== null) {
+				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
+
+				//If it's not already the current section
+				if(!$parent.hasClass(this.config.currentClass)) {
+					//Change the highlighted nav item
+					this.adjustNav(this, $parent);
+
+					//If there is a scrollChange callback
+					if(this.config.scrollChange) {
+						this.config.scrollChange($parent);
+					}
+				}
+			}
+		},
+
+		scrollTo: function(target, callback) {
+			var offset = $(target).offset().top;
+
+			$('html, body').animate({
+				scrollTop: offset
+			}, this.config.scrollSpeed, this.config.easing, callback);
+		},
+
+		unbindInterval: function() {
+			clearInterval(this.t);
+			this.$win.unbind('scroll.onePageNav');
+		}
+	};
+
+	OnePageNav.defaults = OnePageNav.prototype.defaults;
+
+	$.fn.onePageNav = function(options) {
+		return this.each(function() {
+			new OnePageNav(this, options).init();
+		});
+	};
+
+})( jQuery, window , document );
+
+
+$('#nav').onePageNav({
+    currentClass: 'current',
+    changeHash: false,
+    scrollSpeed: 750,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing',
+    begin: function() {
+        //I get fired when the animation is starting
+    },
+    end: function() {
+        //I get fired when the animation is ending
+    },
+    scrollChange: function($currentListItem) {
+        //I get fired when you enter a section and I pass the list item of the section
+    }
 });
