@@ -414,6 +414,22 @@ a.openPhotos:hover, .openPhotos a:active:hover, .openPhotos a:visited:hover{
 	width:100%;
 }
 
+/** Google Map **/
+.cc-map-wrapper {
+    position: relative;
+    height: 0px;
+    padding-bottom: 52%;
+    margin-bottom: 5px;
+}
+
+.cc-map-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+} 
+
 /** RESPONSIVE EDITS**/
 
 @media screen and (max-width: 420px) {	
