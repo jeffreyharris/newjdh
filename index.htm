@@ -25,10 +25,12 @@
 <script>
 function OnLinkedInLoad() {
   IN.Event.on(IN, "auth", OnLinkedInAuth);
+  console.log('onlinkedinload');
 }
 
 function OnLinkedInAuth() {
     IN.API.Profile("me").result(ShowProfileData);
+    console.log('onlinkedinauth');
 }
 
 function ShowProfileData(profiles) {
@@ -38,6 +40,7 @@ function ShowProfileData(profiles) {
     var lastName=member.lastName; 
     var photo=member.pictureUrl; 
     var headline=member.headline; 
+    console.log('showprofdata');
     console.log(firstName);
     //use information captured above
 }
