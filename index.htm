@@ -14,39 +14,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="http://www.jeffreyharris.net/favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/susy/stylesheets/application-2.css">
-
-<script type="text/javascript" src="//platform.linkedin.com/in.js">
-  api_key:78trq7hpdc65lj
-  authorize: true
-  scope: r_fullprofile
-  onLoad: OnLinkedInLoad
-</script>
-
-<script>
-function OnLinkedInLoad() {
-  IN.Event.on(IN, "auth", OnLinkedInAuth);
-  console.log('onlinkedinload');
-}
-
-function OnLinkedInAuth() {
-    IN.API.Profile("me").result(ShowProfileData);
-    console.log('onlinkedinauth');
-}
-
-function ShowProfileData(profiles) {
-    var member = profiles.values[0];
-    var id=member.id;
-    var firstName=member.firstName; 
-    var lastName=member.lastName; 
-    var photo=member.pictureUrl; 
-    var headline=member.headline; 
-    console.log('showprofdata');
-    console.log(firstName);
-    //use information captured above
-}
-
-</script>
-
 </head>
 
 <body>
