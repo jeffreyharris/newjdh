@@ -19,6 +19,30 @@
   api_key:78trq7hpdc65lj
   authorize: true
   scope: r_fullprofile
+  onLoad: OnLinkedInLoad
+</script>
+
+<script>
+function OnLinkedInLoad() {
+  IN.Event.on(IN, "auth", OnLinkedInAuth);
+}
+
+function OnLinkedInAuth() {
+    IN.API.Profile("me").result(ShowProfileData);
+}
+
+function ShowProfileData(profiles) {
+    var member = profiles.values[0];
+    var id=member.id;
+    var firstName=member.firstName; 
+    var lastName=member.lastName; 
+    var photo=member.pictureUrl; 
+    var headline=member.headline; 
+
+    //use information captured above
+}
+
+console.log(member);
 </script>
 
 </head>
