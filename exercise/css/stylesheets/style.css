@@ -3204,6 +3204,9 @@ nav a, nav a:link, nav a:visited, nav a:hover {
     position: absolute;
     top: 0px;
   }
+  #mobileCaro1 p {
+    padding: 0px 10px;
+  }
 
   .centerBut {
     margin: 0px;
