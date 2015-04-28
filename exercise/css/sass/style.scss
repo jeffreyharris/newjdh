@@ -421,7 +421,6 @@ nav{
   		width:100%;
   		margin:0px;
 	}
-
 	.span3{
  		float:none;
   		display:block;
@@ -488,10 +487,13 @@ nav{
 		margin:0px;
 	}	
 	.largeBut2{
-			width:100%;
-			display:block;
-			margin:0px;
-			max-width:100%;
+		width:100%;
+		display:block;
+		margin:0px;
+		max-width:100%;
+	}
+	.points{
+		padding-bottom: 10px;
 	}
 	footer{
 		padding-top: 20px;
@@ -499,7 +501,6 @@ nav{
 	#staticImg, .deskView{
 		display:none;
 	}
-
 	.mobileView{
 		display:block;
 	}

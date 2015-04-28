@@ -3219,6 +3219,10 @@ nav a, nav a:link, nav a:visited, nav a:hover {
     max-width: 100%;
   }
 
+  .points {
+    padding-bottom: 10px;
+  }
+
   footer {
     padding-top: 20px;
   }
