@@ -3096,6 +3096,10 @@ nav a, nav a:link, nav a:visited, nav a:hover {
   text-decoration: none;
 }
 
+#mobileCaro3 {
+  display: none;
+}
+
 /** RESPONSIVE EDITS**/
 .mobileView {
   display: none;
@@ -3153,14 +3157,6 @@ nav a, nav a:link, nav a:visited, nav a:hover {
 
   .section1 {
     background: none;
-  }
-
-  #staticImg, .deskView {
-    display: none;
-  }
-
-  .mobileView {
-    display: block;
   }
 
   .owl-carousel {
@@ -3222,5 +3218,13 @@ nav a, nav a:link, nav a:visited, nav a:hover {
 
   footer {
     padding-top: 20px;
+  }
+
+  #staticImg, .deskView {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
   }
 }

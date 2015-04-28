@@ -385,7 +385,9 @@ nav{
 		}
 }
 
-
+#mobileCaro3{
+	display:none;
+}
 
 	
 /** RESPONSIVE EDITS**/
@@ -441,14 +443,6 @@ nav{
 	.section1{
 		background:none ;
 	}
-	#staticImg, .deskView{
-		display:none;
-	}
-
-	.mobileView{
-		display:block;
-	}	
-
 	.owl-carousel {
     	padding-bottom:20px;
     	padding-top: 0px;
@@ -459,12 +453,10 @@ nav{
   		text-align: right;
   		right: 10px;
   	}
-
 	footer, .points{
 		position:relative;
 		height:auto;
 	}
-
 	.caroTitle, .caroHeadInside, header{
 		position:relative;
 		height:auto;		
@@ -488,7 +480,6 @@ nav{
 			position:absolute;
 			top:0px;
 		}
-		
 	}
 	.centerBut{
 		margin:0px;
@@ -501,6 +492,13 @@ nav{
 	}
 	footer{
 		padding-top: 20px;
+	}
+	#staticImg, .deskView{
+		display:none;
+	}
+
+	.mobileView{
+		display:block;
 	}
 	
 }
