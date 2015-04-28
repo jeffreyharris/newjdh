@@ -2848,7 +2848,7 @@ header {
 }
 
 .section3 {
-  background: url(../images/beach.jpg);
+  background: url(/exercise/images/images/beach.jpg);
 }
 
 .panelLeft {
@@ -3048,7 +3048,7 @@ footer ul li {
 }
 
 .caroHeadInside {
-  background: url(../images/blueHeader.jpg) no-repeat center center;
+  background: url(/exercise/images/blueHeader.jpg) no-repeat center center;
   position: absolute;
   top: 150px;
   text-align: center;
