@@ -385,6 +385,10 @@ nav{
 		}
 }
 
+#deskCaro{
+	z-index:500;
+}
+
 #mobileCaro3{
 	display:none;
 }
@@ -451,6 +455,11 @@ nav{
   		line-height: 0px;
   		text-align: right;
   		right: 10px;
+  		a {
+    	margin-right: 10px;
+    	color: $darkBlue;
+    	font-size: 1.3em;
+		}
   	}
 	footer, .points{
 		position:relative;
@@ -464,7 +473,7 @@ nav{
 		top:0px;
 	}
 	header{
-		height:120px;
+		height:140px;
 	}
 	.caroTitle{
 		padding: 20px 10px;
@@ -494,6 +503,9 @@ nav{
 	}
 	.points{
 		padding-bottom: 10px;
+		p, pre {
+    		margin:0;
+		}
 	}
 	footer{
 		padding-top: 20px;

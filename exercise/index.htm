@@ -171,8 +171,8 @@
 					</div>
 				</div>
 				<div class="content">
-					<div class=" span8">
-					  	  <div id="deskCaro" class="owl-carousel">
+						<div class=" span8">
+					  		<div id="deskCaro" class="owl-carousel">
    								<div> <img src="images/p1.jpg" /> </div>
     							<div> <img src="images/p2.jpg" />  </div>
     							<div> <img src="images/p3.jpg" />  </div>
@@ -181,14 +181,14 @@
     							<div> <img src="images/p6.jpg" />  </div>
     							<div> <img src="images/p7.jpg" />  </div>
     							<div> <img src="images/p8.jpg" />  </div>
-    					  </div>
-					</div>
-					<div class="rewards span8">
-						<h3>Our Rewards, Catered Just For You</h3>
-						<p>Our rewards come in every shape and size. Pick a category and find what rewards await you.</p>
-					</div>
-						
-						<div id="mobileCaro3" class="owl-carousel ">
+    					  	</div>
+						</div>
+						<div class="rewards span8">
+							<h3>Our Rewards, Catered Just For You</h3>
+							<p>Our rewards come in every shape and size. Pick a category and find what rewards await you.</p>
+						</div>
+						<div class=" span8">
+							<div id="mobileCaro3" class="owl-carousel ">
    								<div> <img src="images/r1.png" /> </div>
     							<div> <img src="images/r2.png" />  </div>
     							<div> <img src="images/r3.png" />  </div>
@@ -197,8 +197,9 @@
     							<div> <img src="images/r6.png" />  </div>
     							<div> <img src="images/r7.png" />  </div>
     							<div> <img src="images/r8.png" />  </div>
+    						</div>
     					</div>			
-					</div>				
+				</div>				
 		</section>
 	<!-- END SECTION -->
 	</div>
@@ -240,9 +241,6 @@
 </div>
 <!-- ANIMATIONS WRAPPER -->
 
-
-
-
 <script src="scripts/application.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
@@ -256,7 +254,7 @@ $(document).ready(function() {
 		autoPlay: true,
 		navigationText : ["",""],
 		//scrollPerPage: true,
-		slideSpeed: 3000,
+		slideSpeed: 1000,
 		responsive:{
         	480:{
            	 items:1,
@@ -265,15 +263,13 @@ $(document).ready(function() {
         }
 	});	
 	
-	
-    
 	$("#mobileCaro1").owlCarousel({
 		items : 1,
 		navigation : true, 
 		autoPlay: false,
 		navigationText : ["",""],
 		//scrollPerPage: true,
-		slideSpeed: 3000,
+		slideSpeed: 1000,
 		responsive:{
         	0 : {
            	 items:1,
@@ -288,7 +284,7 @@ $(document).ready(function() {
 		autoPlay: true,
 		navigationText : ["",""],
 		//scrollPerPage: true,
-		slideSpeed: 3000,
+		slideSpeed: 1000,
 		responsive:{
         	800:{
            	 items:1,
@@ -298,14 +294,14 @@ $(document).ready(function() {
 	});
 	
 	$("#mobileCaro3").owlCarousel({
-		items : 1,
+		items : 4,
 		navigation : true, 
 		autoPlay: true,
 		navigationText : ["",""],
 		//scrollPerPage: true,
-		slideSpeed: 3000,
+		slideSpeed: 1000,
 		responsive:{
-        	800:{
+        	480:{
            	 items:1,
            	 nav:true
         	}

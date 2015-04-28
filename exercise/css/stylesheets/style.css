@@ -3096,6 +3096,10 @@ nav a, nav a:link, nav a:visited, nav a:hover {
   text-decoration: none;
 }
 
+#deskCaro {
+  z-index: 500;
+}
+
 #mobileCaro3 {
   display: none;
 }
@@ -3170,6 +3174,11 @@ nav a, nav a:link, nav a:visited, nav a:hover {
     text-align: right;
     right: 10px;
   }
+  .headLinks a {
+    margin-right: 10px;
+    color: #002d72;
+    font-size: 1.3em;
+  }
 
   footer, .points {
     position: relative;
@@ -3186,7 +3195,7 @@ nav a, nav a:link, nav a:visited, nav a:hover {
   }
 
   header {
-    height: 120px;
+    height: 140px;
   }
 
   .caroTitle {
@@ -3221,6 +3230,9 @@ nav a, nav a:link, nav a:visited, nav a:hover {
 
   .points {
     padding-bottom: 10px;
+  }
+  .points p, .points pre {
+    margin: 0;
   }
 
   footer {
