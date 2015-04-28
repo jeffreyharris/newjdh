@@ -1,0 +1,508 @@
+// Screen
+// ======
+@import "susy";
+@import 'normalize';
+@import 'ie';
+@import 'font-awesome';
+@import 'headers';
+@import "grids";
+
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+
+$susy: (
+  columns: 8, 
+  global-box-sizing: border-box 
+  );
+
+@include border-box-sizing;
+
+$darkBlue: #002d72; //darkblue
+$darkerBlue: #2E59A8;
+$formBg: #2f5aa8;   //lighter blue
+$buttonBg: #77ba29; //green
+ 
+img {
+    max-width: 100%;
+}
+
+body    {    
+    margin-top: 0pt;
+    margin-right: 0pt;
+    margin-bottom: 0pt;
+    margin-left: 0pt;
+    padding-top: 0pt;
+    padding-right: 0pt;
+    padding-bottom: 0pt;
+    padding-left: 0pt;
+}
+
+//GRID
+.span8{
+  @include span(8); 
+  margin:0px;
+}
+
+.span6{
+  @include span(6); 
+  margin:0px;
+}
+
+.span5{
+  @include span(5); 
+  margin:0px;
+}
+
+.span4{
+  @include span(4); 
+  margin:0px;
+}
+
+.span3{
+  @include span(3); 
+  margin:0px;
+}
+
+.span2{
+  @include span(2); 
+}
+
+.span1{
+  @include span(1); 
+}
+
+.span4:last-child, .span2:last-child, .span1:last-child { @include last; } 
+
+
+.clear{
+	clear:both;
+}
+
+.showOnMobile{
+	display:none;
+}
+.headLink{
+	color:#666;
+	text-align:right;
+	font-size:1em;
+	a, a:link, a:visited, a:hover{
+			text-decoration:none;
+			color:#666;
+		}
+}
+
+header {
+    background-color: #FFF;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.headLinks{
+	line-height:100px;
+	text-align:right;
+	a{
+		margin-right:10px;
+	}
+}
+.fa-heart{
+	color:red;
+}
+.content {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+
+.logo{
+	padding:20px 0px;		
+}
+
+//ROWS
+
+.section1, .section2, .section3{
+	background-size: cover;
+}
+
+.section1{
+	background:url(file:///Users/jeffharris/Desktop/KOBIE/images/getStarted.jpg) ;
+}
+
+.section2{
+	background:url(file:///Users/jeffharris/Desktop/KOBIE/images/sweater.jpg);
+}
+
+.section3{
+	background:url(file:///Users/jeffharris/Desktop/KOBIE/images/beach.jpg);
+}
+
+.panelLeft{
+	padding: 30px 10px 0px;
+}
+
+#row1 .paneleft{
+	padding-top:100px;
+}
+
+.white, .white h2{
+	color: #fff;
+}
+
+//BUTTONS
+.largeBut{
+	background-color: $buttonBg;
+	color: #fff;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 30px;
+	padding:10px 50px;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;	
+}
+
+.largeBut2 {
+    background-color: #77BA29;
+    color: #FFF;
+    display: block;
+    font-family: "Source Sans Pro",sans-serif;
+    margin-top: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 300px;
+    }
+
+.centerBut{
+	margin:0px auto 20px auto;
+}
+
+.memberLogin{
+	background-color:$formBg;
+	max-width:300px;
+	padding:10px;
+	h3{
+		color:#fff;
+		font-size: 120%;
+	}
+	input{
+		border:none;
+		color:#B6B6B4;
+		line-height:25px;
+		padding:5px;
+		font-size: .8em;
+		width:100%;
+	}
+}
+
+input.loginSubmit{
+	color:#fff;
+}
+
+.spacer{
+	margin-bottom:20px;
+}
+
+.subscriptLeft, .subscriptRight{
+		color:#fff;
+		font-size:10px;
+		line-height:10px;
+		padding:0px;
+}
+
+.subscriptRight{
+	text-align:right;
+}
+
+.loginSubmit{
+	background-color: $buttonBg;
+	color:#fff;
+	max-width:100px;
+	text-transform:uppercase;
+}
+
+//MOVING CARD
+#staticImg{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 110px;
+	left: 57%;
+	width: 100%;
+	min-width: 980px;
+	height: 100%;
+	-webkit-transition: all 0.7s ease-out;
+	-moz-transition: all 0.7s ease-out;
+	-o-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+	-webkit-backface-visibility: hidden;
+ 	-webkit-perspective: 1000;
+ 	-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+   	transform: rotate(-10deg);
+}
+	
+.hand{
+ 	-ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+   	transform: rotate(15deg);
+}
+	
+#staticImg.moveDown{
+	-webkit-transform: translate3d(0, 125%, 0) rotate(-5deg);
+    -ms-transform: translate3d(0, 125%, 0) rotate(-5deg);
+    transform: translate3d(0, 125%, 0) rotate(-5deg);        	
+}
+	
+#staticImg.moveDown2{
+	-webkit-transform: translate3d(0, 230%, 0);
+    -ms-transform: translate3d(0, 230%, 0);
+    transform: translate3d(0, 230%, 0);
+}
+
+//PICTURES
+.sweater{
+	display:none;
+}
+
+.paraSail{
+	display:none;
+	position: absolute;
+	top: 0px;
+	left: 40%;
+}
+
+.points {
+	background-color:$darkerBlue;
+	height: 100%;
+	padding-top:30px;
+	position:absolute;
+	text-align:center;	
+	top:0px;
+	width:100%;
+		h3, p{
+			color: #fff;
+		}
+}
+	
+//FOOTER
+.rewards{
+	text-align:center;
+	h3{
+		color:$darkerBlue;
+		margin-top: 10px;
+	}
+	p{
+    	color: #666;
+    }
+}
+
+footer{
+	background-color: $darkBlue;
+	color:#fff;
+    display: block;
+    height: 100%;
+    padding-top: 70px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    p{
+    	color:#fff;
+    }
+    img{
+    	margin-right:10px;
+    }
+    ul li{
+		display:inline;
+		color:White;
+		text-align:center;
+	}
+}
+
+//SLIDER
+.caroTitle {
+    background-color: $darkerBlue;
+    padding-bottom: 100px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    h2, p{
+    	color:#fff;
+    }
+}
+.caroHeadInside{
+	background:url(file:///Users/jeffharris/Desktop/KOBIE/images/blueHeader.jpg) no-repeat center center ;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    p{
+    	color: #666;
+    }
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    display: none;
+}
+
+.owl-carousel {
+    padding-bottom:20px;
+    padding-top: 300px;
+    border-bottom: 1px #f1f1f1 solid;
+}
+
+.owl-carousel .owl-item {
+  text-align: center;
+}
+
+.showNav{
+	background-color: $darkBlue;
+    bottom: 0px;
+    position:relative;
+    width: 100%;
+    z-index: 5;
+}
+
+nav{
+	ul{
+		font-family: arial sans-serif;
+		margin: 0px;
+		padding:10px 0px;
+		text-align:left;		
+	}
+	ul li{
+		display:inline;
+		padding:0px 20px 0px 0px;
+		}
+	a, a:link, a:visited, a:hover{
+		color:#fff;
+		font-family:arial;
+		text-decoration:none;	
+		}
+}
+
+
+
+	
+/** RESPONSIVE EDITS**/
+.mobileView{
+		display:none;
+}
+			
+@media screen and (max-width: 767px) {	
+	//GRID
+	.span8{
+  		float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px;
+	}
+	.span6{
+ 		float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px;
+	}
+	.span5{
+  	  	float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px;
+	}
+	.span4{
+ 		float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px;
+	}
+
+	.span3{
+ 		float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px;
+	}
+	.span2{
+ 		float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px; 
+	}
+	.span1{
+ 	   	float:none;
+  		display:block;
+  		width:100%;
+  		margin:0px;
+	}
+	.section1{
+		background:none ;
+	}
+	#staticImg, .deskView{
+		display:none;
+	}
+
+	.mobileView{
+		display:block;
+	}	
+
+	.owl-carousel {
+    	padding-bottom:20px;
+    	padding-top: 0px;
+    	border-bottom: 0px #f1f1f1 solid;
+	}
+	.headLinks {
+  		line-height: 50px;
+  		text-align: right;
+  		right: 10px;
+  	}
+
+	footer, .points{
+		position:relative;
+		height:auto;
+	}
+
+	.caroTitle, .caroHeadInside, header{
+		position:relative;
+		height:auto;		
+	}
+	.caroHeadInside{
+		top:0px;
+	}
+	header{
+		height:120px;
+	}
+	.caroTitle{
+		padding: 20px 10px;
+		h2{
+			font-size:200%;
+		}
+	}	
+	#mobileCaro1 {
+		margin:0px;
+		h2{
+			color:$darkBlue;
+			position:absolute;
+			top:0px;
+		}
+		
+	}
+	.centerBut{
+		margin:0px;
+	}	
+	.largeBut2{
+			width:100%;
+			display:block;
+			margin:0px;
+			max-width:100%;
+	}
+	footer{
+		padding-top: 20px;
+	}
+	
+}
+
+

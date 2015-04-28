@@ -1,0 +1,35 @@
+$base-fontSize: 16px;
+$base-whitespace: 1.25em;
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+html{
+  font-size: $base-fontSize;
+  line-height: 1.5;
+}
+
+body{
+  font-size: 100%;
+}
+
+h1, h2, h3{
+  margin-bottom: 0.25 * $base-whitespace;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+  font-size: 350%;
+}
+
+h2{
+  font-size: 300%;
+  line-height: 1;
+}
+
+h3{
+  font-size: 200%;
+}
+   
+p, header, footer {
+	font-family: arial, sans-serif;
+}
