@@ -74,11 +74,9 @@ body    {
 
 .span4:last-child, .span2:last-child, .span1:last-child { @include last; } 
 
-
 .clear{
 	clear:both;
 }
-
 .showOnMobile{
 	display:none;
 }
@@ -91,14 +89,12 @@ body    {
 			color:#666;
 		}
 }
-
 header {
     background-color: #FFF;
     position: absolute;
     top: 0px;
     width: 100%;
 }
-
 .headLinks{
 	line-height:100px;
 	text-align:right;
@@ -114,12 +110,34 @@ header {
     margin: 0px auto;
     padding: 0px 10px;
 }
-
-
 .logo{
 	padding:20px 0px;		
 }
- 
+.showNav{
+	background-color: $darkBlue;
+    bottom: 0px;
+    position:relative;
+    width: 100%;
+    z-index: 5;
+}
+nav{
+	ul{
+		font-family: arial sans-serif;
+		margin: 0px;
+		padding:10px 0px;
+		text-align:left;		
+	}
+	ul li{
+		display:inline;
+		padding:0px 20px 0px 0px;
+		}
+	a, a:link, a:visited, a:hover{
+		color:#fff;
+		font-family:arial;
+		text-decoration:none;	
+		}
+}
+
 //ROWS
 
 .section1, .section2, .section3{
@@ -351,7 +369,7 @@ footer{
 
 .owl-carousel {
     padding-bottom:20px;
-    padding-top: 300px;
+
     border-bottom: 1px #f1f1f1 solid;
 }
 
@@ -359,41 +377,11 @@ footer{
   text-align: center;
 }
 
-.showNav{
-	background-color: $darkBlue;
-    bottom: 0px;
-    position:relative;
-    width: 100%;
-    z-index: 5;
-}
-
-nav{
-	ul{
-		font-family: arial sans-serif;
-		margin: 0px;
-		padding:10px 0px;
-		text-align:left;		
-	}
-	ul li{
-		display:inline;
-		padding:0px 20px 0px 0px;
-		}
-	a, a:link, a:visited, a:hover{
-		color:#fff;
-		font-family:arial;
-		text-decoration:none;	
-		}
-}
-
 #deskCaro{
 	z-index:500;
 }
 
-#mobileCaro3{
-	display:none;
-}
 
-	
 /** RESPONSIVE EDITS**/
 .mobileView{
 		display:none;
@@ -509,6 +497,9 @@ nav{
 	}
 	footer{
 		padding-top: 20px;
+		p{
+			margin:0px;
+		}
 	}
 	#staticImg, .deskView{
 		display:none;

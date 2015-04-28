@@ -2835,6 +2835,30 @@ header {
   padding: 20px 0px;
 }
 
+.showNav {
+  background-color: #002d72;
+  bottom: 0px;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+
+nav ul {
+  font-family: arial sans-serif;
+  margin: 0px;
+  padding: 10px 0px;
+  text-align: left;
+}
+nav ul li {
+  display: inline;
+  padding: 0px 20px 0px 0px;
+}
+nav a, nav a:link, nav a:visited, nav a:hover {
+  color: #fff;
+  font-family: arial;
+  text-decoration: none;
+}
+
 .section1, .section2, .section3 {
   background-size: cover;
 }
@@ -3064,7 +3088,6 @@ footer ul li {
 
 .owl-carousel {
   padding-bottom: 20px;
-  padding-top: 300px;
   border-bottom: 1px #f1f1f1 solid;
 }
 
@@ -3072,36 +3095,8 @@ footer ul li {
   text-align: center;
 }
 
-.showNav {
-  background-color: #002d72;
-  bottom: 0px;
-  position: relative;
-  width: 100%;
-  z-index: 5;
-}
-
-nav ul {
-  font-family: arial sans-serif;
-  margin: 0px;
-  padding: 10px 0px;
-  text-align: left;
-}
-nav ul li {
-  display: inline;
-  padding: 0px 20px 0px 0px;
-}
-nav a, nav a:link, nav a:visited, nav a:hover {
-  color: #fff;
-  font-family: arial;
-  text-decoration: none;
-}
-
 #deskCaro {
   z-index: 500;
-}
-
-#mobileCaro3 {
-  display: none;
 }
 
 /** RESPONSIVE EDITS**/
@@ -3237,6 +3232,9 @@ nav a, nav a:link, nav a:visited, nav a:hover {
 
   footer {
     padding-top: 20px;
+  }
+  footer p {
+    margin: 0px;
   }
 
   #staticImg, .deskView {
