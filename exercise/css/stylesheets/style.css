@@ -2840,15 +2840,15 @@ header {
 }
 
 .section1 {
-  background: url(images/getStarted.jpg);
+  background: url(../images/getStarted.jpg);
 }
 
 .section2 {
-  background: url(images/sweater.jpg);
+  background: url(../images/sweater.jpg);
 }
 
 .section3 {
-  background: url(images/beach.jpg);
+  background: url(../images/beach.jpg);
 }
 
 .panelLeft {
@@ -3048,7 +3048,7 @@ footer ul li {
 }
 
 .caroHeadInside {
-  background: url(images/blueHeader.jpg) no-repeat center center;
+  background: url(../images/blueHeader.jpg) no-repeat center center;
   position: absolute;
   top: 150px;
   text-align: center;
