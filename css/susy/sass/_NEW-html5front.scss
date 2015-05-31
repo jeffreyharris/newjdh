@@ -77,10 +77,10 @@ header{
 
 @keyframes showBack {
   0% {
-    fill:black;
+    0% { opacity: 0; }
   }
   100% {
-    fill:#FFBB00;
+    0% { opacity: 1; }
   }
 }
 
