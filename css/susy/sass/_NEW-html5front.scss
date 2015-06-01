@@ -169,16 +169,12 @@ header{
     	transform: translateX(250px);
     	 -ms-transform: translateX(250px); /* IE 9 */
     	-webkit-transform: translateX(250px); /* Safari */
-    	transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
 	}
 	100% {
   		opacity: 1;
     	transform: translateX(0px);
     	 -ms-transform: translateX(0px); /* IE 9 */
     	-webkit-transform: translateX(0px); /* Safari */
-    	transform: translate3d(0,0,0);
--webkit-transform: translate3d(0,0,0);
 	}
 }
 //END LOGO SVG
