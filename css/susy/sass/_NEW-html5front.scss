@@ -107,6 +107,7 @@ header{
   	@include animation('showBack .5s');
   	animation-delay: 2s;
   	animation-fill-mode:forwards;
+  	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
 } 
 
 @include keyframes(showBack) {
@@ -119,6 +120,7 @@ header{
 	fill:#00376D;
 	@include animation('typing 2s');
 	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
 		&:nth-child(1) {
     		animation-delay: 2.6s;
   		}
@@ -150,6 +152,7 @@ header{
 	transform: translateX(250px);
 	@include animation('mouseSlide .5s ease');
 	animation-fill-mode:forwards;
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
 	animation-delay: 5s;
 }
 
