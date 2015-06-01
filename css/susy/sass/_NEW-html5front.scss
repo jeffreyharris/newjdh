@@ -66,18 +66,50 @@ header{
   height: 100%;
 }
 
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
 .screenBackground{
 	opacity: 0;
 	background: -webkit-linear-gradient(#4959ef, #7782ea); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(#4959ef, #7782ea); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(#4959ef, #7782ea); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(#4959ef, #7782ea); /* Standard syntax */
-  	animation: showBack .5s ;
+  	@include animation('showBack .5s');
   	animation-delay: 2s;
   	animation-fill-mode:forwards;
 } 
 
-@keyframes showBack {
+@include keyframes(showBack) {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }	
