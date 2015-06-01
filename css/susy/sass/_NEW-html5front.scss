@@ -117,7 +117,7 @@ header{
 .harris-letter {
 	opacity: 0;
 	fill:#00376D;
-	animation: typing 2s; 
+	@include animation('typing 2s');
 	animation-fill-mode:forwards;
 		&:nth-child(1) {
     		animation-delay: 2.6s;
@@ -139,7 +139,7 @@ header{
   		}
 }
 
-@keyframes typing {
+@include keyframes(typing) {
 	0% { opacity: 0; }
 	0% { opacity: 1; }
 	100% { opacity: 1; }
@@ -148,12 +148,12 @@ header{
 #mouse{ 
 	opacity: 0;
 	transform: translateX(250px);
-	animation: mouseSlide  .5s ease;
+	@include animation('mouseSlide .5s ease');
 	animation-fill-mode:forwards;
 	animation-delay: 5s;
 }
 
-@keyframes mouseSlide {
+@include keyframes(mouseSlide) {
 	0% {
 		opacity: 0;
     	transform: translateX(250px);
