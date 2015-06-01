@@ -160,8 +160,8 @@ header{
 	@include animation('mouseSlide .5s ease');
 	animation-fill-mode:forwards;
 	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
-	animation-delay: 3s;
-	-webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+	animation-delay: 4s;
+	-webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
 }
 
 @include keyframes(mouseSlide) {
