@@ -157,6 +157,8 @@ header{
 #mouse{ 
 	opacity: 0;
 	transform: translateX(250px);
+	 -ms-transform: translateX(250px); /* IE 9 */
+    	-webkit-transform: translateX(250px); /* Safari */
 	@include animation('mouseSlide .5s ease');
 	animation-fill-mode:forwards;
 	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
@@ -167,15 +169,9 @@ header{
 @include keyframes(mouseSlide) {
 	0% {
 		opacity: 0;
-    	transform: translateX(250px);
-    	 -ms-transform: translateX(250px); /* IE 9 */
-    	-webkit-transform: translateX(250px); /* Safari */
 	}
 	100% {
   		opacity: 1;
-    	transform: translateX(0px);
-    	 -ms-transform: translateX(0px); /* IE 9 */
-    	-webkit-transform: translateX(0px); /* Safari */
 	}
 }
 //END LOGO SVG
